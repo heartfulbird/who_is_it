@@ -9,9 +9,16 @@
 // ВОЗМОЖНО ЭТО ЛУЧШЕ ИНИЦИАЛИЗИРОВАТЬ ПРИ ЗАГРУЗКЕ так как в них используются селекторы элементов - верстка должна быть загружена
 
 function rotateH () {
+
+  $('#one').animate({left: '-614px'}, 500);
+
     $(".phone").rotate({animateTo:90});
-  $('.boxes').removeClass('vertical');
-  $('.boxes').addClass('horizontal');
+
+//  $('.boxes').removeClass('vertical');
+//  $('.boxes').addClass('horizontal');
+
+
+
 
     setTimeout(function () {
         $(".foto").addClass('h');

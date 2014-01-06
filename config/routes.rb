@@ -64,5 +64,7 @@ Template::Application.routes.draw do
 
   get 'enter_users/:key' => 'mycache#enter_users'
 
+  get 'check_users/:key' => 'mycache#check_users'
+
 
 end

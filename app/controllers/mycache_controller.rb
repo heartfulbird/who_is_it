@@ -37,4 +37,16 @@ class MycacheController < ApplicationController
     render json: @data.to_json
   end
 
+  # Пользователи в базе
+  def check_users
+
+    if params[:key]
+      @users = User.find(params[:key])
+    end
+    #
+    #@users = User.all
+
+
+  end
+
 end
