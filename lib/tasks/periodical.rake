@@ -43,7 +43,7 @@ def toBase
               new_obj.delete(id_vk)
 
               # из кэша самого юзера удаляем
-              delete_user(id_vk)
+              Rails.cache.delete(id_vk)
 
             end
 
