@@ -1,0 +1,66 @@
+/h1 Hi I'm in slim
+/
+/
+/p Данные из кэша
+/p = @cache_info
+
+/p Юзер
+/- @data.each_with_index  do |obj, index|
+/  p = index
+/
+/  = obj[0]
+/  = obj[1][:vk_id]
+/
+/end
+
+p = @a
+
+#preloader.hide Load
+
+
+.phone
+  .foto_wrap
+    .foto
+
+
+.rotate_h Горизонтально
+br
+.rotate_v Вертикально
+br
+.next_foto onclick="nextFoto();" Next Foto
+
+= image_tag('1px.png', class: 'hide_foto', onerror: 'imgError();')
+
+
+.boxes
+  form
+    .span3
+      /label for="g1"
+      /  input id="g1" name="choice" type="radio"
+      /  span.g1
+      .btn#g1 onclick="approve(this);"
+
+      /label for="g2"
+      /  input id="g2" name="choice" type="radio"
+      /  span.g2
+      .btn#g2 onclick="approve(this);"
+
+
+    .span3
+      /label for="g3"
+      /  input id="g3" name="choice" type="radio"
+      /  span.g3
+      .btn#g3 onclick="approve(this);"
+
+      /label for="g4"
+      /  input id="g4" name="choice" type="radio"
+      /  span.g4
+      .btn#g4 onclick="approve(this);"
+
+
+#counter
+
+#result result
+
+
+//.btn#error onclick="PasteNewPhoto ('http://jdj.jpg');" img script error, check
