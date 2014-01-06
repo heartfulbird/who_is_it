@@ -18,81 +18,10 @@ class WelcomeController < ApplicationController
     # json.users @users, id, name  ...
 
 
-    # Так можно записать в кэш из контроллера
-    #update_cache('user_info', ' its NEW cache info, key: user_info')
-    #@upd_cache_info = update_cache('user_info', ' its NEW!!! cache info, key: user_info')
-
-
-
-    #  При создании юзера
-    #  id_vk: ..., count: 0, props: {list: []}
-
-    #  u = User.new id_vk: 111, count: 0, props: {list: []}
-    #  u.save
-
-    #  maybe can save props this way User.save(props: '{count: 55}')
-    #  get:  u = User.where(id_vk: 555)
-
-
-
-    #  Update
-    #  u = User.where(id_vk: 111)
-    #  u.new(count: '1', props)
-
-
-
-
-    # Объект всх кто зашел в приложение. Номер 4, 7 - id пользователей
-    #@data = {
-    #          4 => { vk_id: 7 },
-    #          7 => { vk_id: 1 }
-    #        }
-
-    #@data = {
-    #    4 => {vk_id: 7},
-    #    7 => {vk_id: 1}
-    #}
-
-    #a = ["a", "b", "b", "b", "c"]
-    #a.delete("b")
-    #@a = a
-
-    #a = ['a', 'b', 8]
-    #
-    #a.delete(5)
-    #
-    #a << 200
-    #
-    #@a = a
-
-    #@data.each_with_index do |obj, index|
-    #  # индекс по порядку итерации
-    #  i = index
-    #
-    #  # id пользователя
-    #  id     = obj[0]
-    #
-    #  # id_vk
-    #  id_vk  = obj[1][:vk_id]
-    #
-    #end
-
-
-
-    #@data = [
-    #    [4, 7],
-    #    [6, 12]
-    #
-    #]
-
-
-    #u = User.where(id_vk: 111)
-    #u.new(count: data, props)
-    #
-
 
     #toBase
     #savefile
+    #compareTime
   end
 
 
@@ -113,19 +42,29 @@ class WelcomeController < ApplicationController
 
         if user != 0
 
-          #@a << user[:id]
+          # если есть время записи в кэш только тогда с ним работаем
+          if user[:time]
 
-          # пишем
-          if User.update(user[:id], count: user[:count], props: {list: user[:props][:list]})
+            last = user[:time] + 10*60
+            now = Time.now
 
-            # То что записалось удаляем из временного списка
-            new_obj.delete(id_vk)
+            if  last < now
+              # '10 min expire, rec base , clear cache'
 
-            # из кэша самого юзера удаляем
-            delete_user(id_vk)
+              # пишем
+              if User.update(user[:id], count: user[:count], props: {list: user[:props][:list]})
+
+                # То что записалось удаляем из временного списка
+                new_obj.delete(id_vk)
+
+                # из кэша самого юзера удаляем
+                delete_user(id_vk)
+
+              end
+
+            end
 
           end
-
 
         end
 
@@ -159,4 +98,123 @@ class WelcomeController < ApplicationController
   end
 
 
+  def compareTime
+    a = Time.now
+
+    b = Time.now + 10*60
+
+    #@data = a > b
+
+    obj = {k: 10, x: 17}
+
+    obj[:a] =  a
+
+    #@data = obj
+
+    update_cache('time', obj)
+
+    read_obj = just_read('time')
+
+    read_a = read_obj[:a]
+
+    #@data = read_a < b
+
+
+    # на шаге получения кэша конкретного юзера
+    user = just_read(111)
+
+    # если есть время записи в кэш только тогда с ним работаем
+    if user[:time]
+      @orig = user[:time]
+      @last = user[:time] + 2*60
+      @now = Time.now
+
+      if  @last < @now
+        @data = '10 min expire, rec base , clear cache'
+      else
+        @data = 'not expire, dont touch'
+      end
+
+
+    end
+
+  end
+
+
+
+
+
+
+
+
+
+
 end
+
+
+# Так можно записать в кэш из контроллера
+#update_cache('user_info', ' its NEW cache info, key: user_info')
+#@upd_cache_info = update_cache('user_info', ' its NEW!!! cache info, key: user_info')
+
+
+#  При создании юзера
+#  id_vk: ..., count: 0, props: {list: []}
+
+#  u = User.new id_vk: 111, count: 0, props: {list: []}
+#  u.save
+
+#  maybe can save props this way User.save(props: '{count: 55}')
+#  get:  u = User.where(id_vk: 555)
+
+
+#  Update
+#  u = User.where(id_vk: 111)
+#  u.new(count: '1', props)
+
+
+# Объект всх кто зашел в приложение. Номер 4, 7 - id пользователей
+#@data = {
+#          4 => { vk_id: 7 },
+#          7 => { vk_id: 1 }
+#        }
+
+#@data = {
+#    4 => {vk_id: 7},
+#    7 => {vk_id: 1}
+#}
+
+#a = ["a", "b", "b", "b", "c"]
+#a.delete("b")
+#@a = a
+
+#a = ['a', 'b', 8]
+#
+#a.delete(5)
+#
+#a << 200
+#
+#@a = a
+
+#@data.each_with_index do |obj, index|
+#  # индекс по порядку итерации
+#  i = index
+#
+#  # id пользователя
+#  id     = obj[0]
+#
+#  # id_vk
+#  id_vk  = obj[1][:vk_id]
+#
+#end
+
+
+#@data = [
+#    [4, 7],
+#    [6, 12]
+#
+#]
+
+
+#u = User.where(id_vk: 111)
+#u.new(count: data, props)
+#

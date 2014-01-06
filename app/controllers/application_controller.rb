@@ -21,7 +21,11 @@ class ApplicationController < ActionController::Base
   # А динамические обновления будут через AJAX
   def update_cache(key, value)
 
-    Rails.cache.write(key, value)
+    obj = value
+
+    obj[:time] = Time.now
+
+    Rails.cache.write(key, obj)
 
   end
   helper_method :update_cache
@@ -100,9 +104,10 @@ class ApplicationController < ActionController::Base
     # users = [1,2,3,4]
     users = Rails.cache.read('users')
 
-    users.delete(value)
+
 
     if users
+      users.delete(value)
       users << value
     else
       users = [value]
@@ -121,16 +126,12 @@ class ApplicationController < ActionController::Base
 
 
   helper_method :update_cache
-
-  helper_method :delete_user
-
-
   helper_method :user_cache
   helper_method :groups_cache
 
   helper_method :just_read
 
   helper_method :plus_user
-
+  helper_method :delete_user
 
 end

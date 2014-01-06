@@ -2,15 +2,18 @@
 
 namespace :rec do
 
-  desc "Do it every minute"
+
+
+  desc 'Do it every minute'
+
   task tobase: :environment do
     #Searcher.find_notify(User)
 
 
     @bigtable = [1, 2, 3]
-    doc = "wyniki.csv"
+    doc = 'CRONTEST.csv'
 
-    File.open("wyniki.csv", "w") do |f|
+    File.open('CRONTEST.csv', 'w') do |f|
       @bigtable.each do |row|
         f << row
       end
