@@ -14,10 +14,11 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 
-//= require jQueryRotateCompressed.2.2
+//= require libs/jQueryRotateCompressed.2.2
+//= require libs/jquery.easing.1.3
+
 
 //= require pages/functions
-
 //= require pages/main
 
 

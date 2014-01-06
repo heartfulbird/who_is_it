@@ -8,23 +8,6 @@
 
 
 
-//function getCache (key) {
-//
-//
-//    $.ajax({
-//        url: '/get_cache' + '/' + key,
-//        type: 'get',
-//        success: function (data) {
-//
-//            console.log('CACHE: ');
-//            console.log(data)
-//
-//        }
-//    });
-//
-//}
-
-
 function justRead (key) {
 
 
@@ -80,13 +63,6 @@ function updateCache (key, value) {
     });
 
 }
-
-//getCache('user_1209');
-//
-//updateCache('user_1209',
-//    {user: 'aaa', ids: [2,2,3], count: 16}
-//);
-
 
 
 

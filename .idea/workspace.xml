@@ -8,11 +8,11 @@
     <file path="/welcome_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389024871922" ignored="false" />
     <file path="/index.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387205698128" ignored="false" />
     <file path="/application_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389024759925" ignored="false" />
-    <file path="/index.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389031979576" ignored="false" />
+    <file path="/index.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389034510752" ignored="false" />
     <file path="/amelia.html.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387218314703" ignored="false" />
     <file path="/application.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387023466264" ignored="false" />
     <file path="/app.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387024403863" ignored="false" />
-    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389031998097" ignored="false" />
+    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389034494779" ignored="false" />
     <file path="/development.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388942000522" ignored="false" />
     <file path="/mycache_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032897613" ignored="false" />
     <file path="/routes.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032846546" ignored="false" />
@@ -20,7 +20,7 @@
     <file path="/get_data.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387213295346" ignored="false" />
     <file path="/get_data.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387213422271" ignored="false" />
     <file path="/index.json.jbuilder" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388918820522" ignored="false" />
-    <file path="/a.dummy" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388944110232" ignored="false" />
+    <file path="/a.dummy" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389038880870" ignored="false" />
     <file path="/application.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387220596513" ignored="false" />
     <file path="/database.yml" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387224866249" ignored="false" />
     <file path="/20131216201731_create_users.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387225699926" ignored="false" />
@@ -29,10 +29,10 @@
     <file path="/user.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387233019832" ignored="false" />
     <file path="/20131216224614_add_index_to_id_vk.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387234016460" ignored="false" />
     <file path="/application.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388595608503" ignored="false" />
-    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032114328" ignored="false" />
-    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388949530490" ignored="false" />
+    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389038112030" ignored="false" />
+    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389033842250" ignored="false" />
     <file path="/a.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388607264722" ignored="false" />
-    <file path="/periodical.rake" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389031688216" ignored="false" />
+    <file path="/periodical.rake" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389039699699" ignored="false" />
     <file path="/schedule.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389005690688" ignored="false" />
     <file path="/user_mailer.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389023530186" ignored="false" />
     <file path="/welcome_email.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389023806699" ignored="false" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="286" selection-end="286" vertical-scroll-proportion="-17.5">
+            <state line="20" column="94" selection-start="153" selection-end="153" vertical-scroll-proportion="-5.8333335">
               <folding />
             </state>
           </provider>
@@ -69,19 +69,19 @@
       <file leaf-file-name="app.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="8" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
+            <state line="87" column="14" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
+            <state line="178" column="29" selection-start="4360" selection-end="4360" vertical-scroll-proportion="3.64">
               <folding>
-                <element signature="e#775#1085#0" expanded="false" />
-                <element signature="e#1090#1745#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#!!block;n#scanCase#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,34 +90,26 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="301" column="22" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!block;n#random#0" expanded="false" />
+                <element signature="n#!!block;n#asort#0" expanded="false" />
+                <element signature="n#!!block;n#bgPaste#0" expanded="false" />
+                <element signature="n#!!block;n#loadImg#0" expanded="false" />
+                <element signature="n#!!block;n#imgError#0" expanded="false" />
+                <element signature="n#!!block;n#pasteNames#0" expanded="false" />
+                <element signature="n#!!block;n#preloader#0" expanded="false" />
+                <element signature="n#!!block;n#hidePreloader#0" expanded="false" />
+                <element signature="n#!!block;n#showSuccess#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="periodical.rake" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="periodical.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="48" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+            <state line="3" column="32" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.4826923">
               <folding />
             </state>
           </provider>
@@ -126,17 +118,19 @@
       <file leaf-file-name="mycache_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mycache_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="39" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
+            <state line="30" column="17" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_users.slim" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/mycache/check_users.slim">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="92" column="4" selection-start="1847" selection-end="1929" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#162#3914#1" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" />
         <option value="$PROJECT_DIR$/config/schedule.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/periodical.rake" />
-        <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
         <option value="$PROJECT_DIR$/app/views/mycache/check_users.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/mycache_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/mycache/check_users.slim" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/cache.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/periodical.rake" />
       </list>
     </option>
   </component>
@@ -440,32 +434,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="who_is_it" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -801,13 +769,13 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.125" sideWeight="0.7909091" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28939393" sideWeight="0.9814815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28939393" sideWeight="0.875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.018518519" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.125" sideWeight="0.2090909" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -880,88 +848,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js</url>
-          <line>30</line>
+          <line>49</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/schedule.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="604" selection-end="648" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="94" selection-end="94" vertical-scroll-proportion="0.09836066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="18" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.15081967">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/amelia.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.208333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="2" selection-start="2483" selection-end="3583" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2483#3581#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#775#1085#0" expanded="false" />
-            <element signature="e#1090#1745#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="8" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/mycache_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -976,9 +869,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
+    <entry file="file://$PROJECT_DIR$/app/views/mycache/check_users.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="286" selection-end="286" vertical-scroll-proportion="-17.5">
+        <state line="3" column="27" selection-start="110" selection-end="110" vertical-scroll-proportion="0.07964602">
           <folding />
         </state>
       </provider>
@@ -990,16 +883,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mycache_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="39" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
+        <state line="178" column="29" selection-start="4360" selection-end="4360" vertical-scroll-proportion="3.64">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#scanCase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mycache/check_users.slim">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cache.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
+        <state line="66" column="0" selection-start="916" selection-end="916" vertical-scroll-proportion="0.27504244">
+          <folding>
+            <element signature="n#!!block;n#justRead#0" expanded="false" />
+            <element signature="n#!!block;n#enterUsers#0" expanded="false" />
+            <element signature="n#!!block;n#updateCache#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="14" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="27" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="732" selection-end="732" vertical-scroll-proportion="0.4990758">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="22" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!block;n#random#0" expanded="false" />
+            <element signature="n#!!block;n#asort#0" expanded="false" />
+            <element signature="n#!!block;n#bgPaste#0" expanded="false" />
+            <element signature="n#!!block;n#loadImg#0" expanded="false" />
+            <element signature="n#!!block;n#imgError#0" expanded="false" />
+            <element signature="n#!!block;n#pasteNames#0" expanded="false" />
+            <element signature="n#!!block;n#preloader#0" expanded="false" />
+            <element signature="n#!!block;n#hidePreloader#0" expanded="false" />
+            <element signature="n#!!block;n#showSuccess#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="758" selection-end="758" vertical-scroll-proportion="0.75">
+          <folding>
+            <element signature="e#775#1085#0" expanded="false" />
+            <element signature="e#1090#1745#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="94" selection-start="153" selection-end="153" vertical-scroll-proportion="-5.8333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mycache_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="17" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="4" selection-start="1847" selection-end="1929" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#162#3914#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="32" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.4826923">
           <folding />
         </state>
       </provider>

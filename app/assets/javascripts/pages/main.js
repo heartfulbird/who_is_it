@@ -211,6 +211,7 @@ function PasteNewPhoto (src) {
         }
 
          //console.log(h, w);
+        pasteNames(orientFoto);
         scanCase(src, h, w);
 
     });
@@ -236,37 +237,9 @@ function nextFoto () {
             TrueGroup = a.name;
             TrueGroupId = a.id;
 
-            console.log(TrueGroup);
+          console.log(TrueGroup);
 
-
-
-            // + 3 Рандомных шруппы для вариантов угадывания
-            var b = Groups.artists[random(0, 99)];
-            var c = Groups.artists[random(0, 99)];
-            var d = Groups.artists[random(0, 99)];
-
-            // Все группы в массиве
-            var arr = [a,b,c,d];
-
-
-            // Перемешиваем все группы
-            var groups = asort(arr);
-
-            console.log(groups);
-
-            // чистим предыдущие названия
-            //$('#g1,#g2,#g3,#g4').attr('value','');
-            $('#g1,#g2,#g3,#g4').text('');
-            // Подставляем названия групп в разном порядке для выбора
-            for (var z = 0; z<=3; z++) {
-                if (arr[z].hasOwnProperty('name')){
-                    //$('#g' + (z+1)).val(arr[z].name);
-                    //$('.g' + (z+1)).text(arr[z].name);
-                    $('#g' + (z+1)).text(arr[z].name);
-                } else {
-                    console.log("arr[z] has not Property('name') , z=" + z);
-                }
-            }
+          //pasteNames();
 
 
             // Фото артиста a

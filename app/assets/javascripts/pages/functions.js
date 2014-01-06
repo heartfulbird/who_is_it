@@ -8,11 +8,30 @@
 
 // ВОЗМОЖНО ЭТО ЛУЧШЕ ИНИЦИАЛИЗИРОВАТЬ ПРИ ЗАГРУЗКЕ так как в них используются селекторы элементов - верстка должна быть загружена
 
+var oneLeft = 12;
+var twoRight = 40;
+var offsetH = 626;
+
+var threeTop = 40;
+var fourBottom = 46;
+var offsetV = 180;
+var animateEase = 'easeOutQuad';
+
+var ani_time = 800;
+
 function rotateH () {
 
-  $('#one').animate({left: '-614px'}, 500);
+  var left = (oneLeft - offsetH).toString() + 'px';
+  var right = (twoRight - offsetH).toString() + 'px';
+
+  $('#one').animate({left: left}, ani_time, animateEase);
+  $('#two').animate({right: right}, ani_time, animateEase);
 
     $(".phone").rotate({animateTo:90});
+
+
+  $('#three').animate({top: threeTop}, ani_time, animateEase);
+  $('#four').animate({bottom: fourBottom}, ani_time, animateEase);
 
 //  $('.boxes').removeClass('vertical');
 //  $('.boxes').addClass('horizontal');
@@ -30,7 +49,23 @@ function rotateH () {
 }
 
 function rotateV () {
-    $(".phone").rotate({animateTo:0});
+
+  var top = (threeTop - offsetV).toString() + 'px';
+  var bottom = (fourBottom - offsetV).toString() + 'px';
+
+
+  $('#three').animate({top: top}, ani_time, animateEase);
+  $('#four').animate({bottom: bottom}, ani_time, animateEase);
+
+    $(".phone").rotate({animateTo: 0});
+
+  $('#one').animate({left: oneLeft}, ani_time, animateEase);
+  $('#two').animate({right: twoRight}, ani_time, animateEase);
+
+
+
+
+
 
     //$(".foto").rotate(0);
 
@@ -116,6 +151,45 @@ function loadImg (src) {
 function imgError() {
   console.log('это делаем если картинка не загрузилась');
   otherFoto();
+
+}
+
+
+function pasteNames(orient) {
+  console.log('pasteNames');
+  console.log(orient);
+
+
+  var a = TrueGroup;
+
+  // + 3 Рандомных шруппы для вариантов угадывания
+
+  var b = Groups.artists[random(0, 99)].name;
+  var c = Groups.artists[random(0, 99)].name;
+  var d = Groups.artists[random(0, 99)].name;
+
+  // Все группы в массиве
+  var arr = [a, b, c, d];
+
+  console.log(arr);
+
+  // Перемешиваем все группы
+  var groups = asort(arr);
+
+
+
+  var offset = 0;
+  //  V - g 1234  ||   H, square - g 5678
+  if (orient == 'V') {
+    offset = 1;
+  } else {
+    offset = 5;
+  }
+
+  // Подставляем названия групп в разном порядке для выбора
+  for (var z = 0; z <= 3; z++) {
+    $('#g' + (z + offset)).text(arr[z]);
+  }
 
 }
 
