@@ -10,6 +10,8 @@
 
 function rotateH () {
     $(".phone").rotate({animateTo:90});
+  $('.boxes').removeClass('vertical');
+  $('.boxes').addClass('horizontal');
 
     setTimeout(function () {
         $(".foto").addClass('h');
@@ -25,7 +27,8 @@ function rotateV () {
 
     //$(".foto").rotate(0);
 
-
+    $('.boxes').removeClass('horizontal');
+    $('.boxes').addClass('vertical');
 
     $('.foto')
         .css('-webkit-transform', 'none')

@@ -77,14 +77,29 @@
 //line-height: 28px
 
 
-.boxes
+.boxes.vertical
 
   .span3
     top: 200px
     position: absolute
 
-  &.vertical
-    .one
+    &.one
       left: 12px
-    .two
+    &.two
       right: 40px
+
+.boxes.horizontal
+
+  .span3
+    position: absolute
+    left: 297px
+
+    &.one
+      top: 40px
+    &.two
+      bottom: -36px
+
+
+#counter
+  position: absolute
+  right: 60px
