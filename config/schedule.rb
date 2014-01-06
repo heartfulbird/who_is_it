@@ -7,7 +7,7 @@
 #
 # set :output, "/path/to/my/cron_log.log"
 
-set :output, '/log/cron_log.log'
+#set :output, '/log/cron_log.log'
 #set :environment, 'development'
 
 

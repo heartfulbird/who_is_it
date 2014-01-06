@@ -1,29 +1,17 @@
 
 
-namespace :rec do
+desc 'Every 10 minute rec in base and clear cache User older then 10 min'
+
+task from_cache_to_base: :environment do
+
+  toBase
+
+end
 
 
 
-  desc 'Do it every minute'
+task send_mail: :environment do
 
-  task tobase: :environment do
-    #Searcher.find_notify(User)
-
-
-    @bigtable = [1, 2, 3]
-    doc = 'CRONTEST.csv'
-
-    File.open('CRONTEST.csv', 'w') do |f|
-      @bigtable.each do |row|
-        f << row
-      end
-    end
-
-    send_file(doc, :disposition => 'attachment')
-
-  end
-
-
-
+  UserMailer.welcome_email.deliver
 
 end
