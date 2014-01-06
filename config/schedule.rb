@@ -8,7 +8,7 @@
 # set :output, "/path/to/my/cron_log.log"
 
 set :output, '/log/cron_log.log'
-set :environment, 'development'
+#set :environment, 'development'
 
 
 # every 2.hours do
@@ -28,9 +28,9 @@ set :environment, 'development'
 #end
 
 
-every 1.minutes do
-  rake 'rec:tobase'
-end
+#every 1.minutes do
+#  rake 'rec:tobase'
+#end
 
 
 
