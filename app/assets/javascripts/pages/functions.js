@@ -196,7 +196,14 @@ function pasteNames(orient) {
 
 function preloader() {
 
-  $('#preloader').show();
+  setTimeout(function () {
+
+    if (iLoad == 0) {
+      $('#preloader').show();
+    }
+
+
+  }, 1000);
 
 }
 
@@ -216,7 +223,18 @@ function showSuccess() {
 
 function updatePageCounter(counter) {
 
-  $('#counter').text(counter);
+  var dig = $('#counter .digit');
+
+
+  dig
+      .text(counter)
+      .addClass('big');
+
+  setTimeout(function () {
+    dig.removeClass('big');
+
+  } ,1000)
+
 
 }
 
@@ -274,7 +292,9 @@ function approve(this_) {
 
 
     // Показать следующую фотку
-    setTimeout( nextFoto(), 1000);
+    setTimeout(function () {
+          nextFoto();
+        }, 1000);
 
   } else {
     // Если группа НЕ угадана
@@ -284,7 +304,9 @@ function approve(this_) {
 
 
     // Показать следующую фотку
-    setTimeout(nextFoto(), 1000);
+    setTimeout(function () {
+      nextFoto();
+    }, 1000);
 
   }
 

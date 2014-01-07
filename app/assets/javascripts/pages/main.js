@@ -51,7 +51,7 @@ var orientPhone = 'V';
 var orientFoto;
 
 var errorGroups = 0;
-
+var iLoad = 0;
 /*
  * Основные ф-ии
  */
@@ -173,6 +173,7 @@ console.log('scanCase ');
         }
 
     }
+ iLoad = 1;
  hidePreloader();
 }
 
@@ -220,11 +221,12 @@ function PasteNewPhoto (src) {
 }
 
 function nextFoto () {
+    iLoad = 0;
     // Определяем номер новой группы и перезаписываем глоб. переменную
     indexG = indexG + 1;
 
-    if (indexG > Groups.count) {
-        console.log('перебрали все группы в этой категории');    // todo!!!
+    if (indexG > (Object.keys(Groups.artists).length - 1)) {
+        console.log('перебрали все группы в этой категории. Начать сначала? Тогда результат угаданных обнулится.');    // todo!!!
         return false;
     } else {
 
@@ -300,6 +302,30 @@ function nextFoto () {
 
 }
 
+
+function otherOk(a, num) {
+
+  console.log('номер другого случайного фото ' + num);
+
+
+  var src = a.images[num].url;
+  PasteNewPhoto(src);
+
+}
+
+function chooseRandom(a) {
+
+  var temp = random(0, (a.images.length - 1));
+
+  if (temp !== fotoNum) {
+    fotoNum = temp;
+    otherOk(a,fotoNum);
+  } else {
+    chooseRandom(a);
+  }
+
+}
+
 function otherFoto () {
 
   console.log('берем другое фото той же группы');
@@ -312,12 +338,7 @@ function otherFoto () {
 
   var a = Groups.artists[indexG];
 
-  fotoNum = random(0, (a.images.length - 1) );
-  console.log('номер другого случайного фото ' + fotoNum);
-
-
-  var src = a.images[fotoNum].url;
-  PasteNewPhoto(src);
+  chooseRandom(a);
 
 
 }

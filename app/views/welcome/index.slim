@@ -8,19 +8,19 @@
 
 
 
-#preloader.hide Load
+#preloader.hide
 
 
-.phone
+.phone onclick="nextFoto();"
   .foto_wrap
     .foto
 
 
-.rotate_h Горизонтально
-br
-.rotate_v Вертикально
-br
-.next_foto onclick="nextFoto();" Next Foto
+/.rotate_h Горизонтально
+/br
+/.rotate_v Вертикально
+/br
+/.next_foto onclick="nextFoto();" Next Foto
 
 = image_tag('1px.png', class: 'hide_foto', onerror: 'imgError();')
 
@@ -48,6 +48,9 @@ br
 
 
 #counter
+  p.text Угадано:
+  p.digit
+
 
 #result.hide result
 
