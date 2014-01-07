@@ -41,6 +41,7 @@ html lang="en"
     /          li= link_to "Link 1", "/path1"
     /          li= link_to "Link 2", "/path2"
     /          li= link_to "Link 3", "/path3"
+    /= render 'shared/navbar'
 
     .container
 
@@ -55,6 +56,9 @@ html lang="en"
 
 
         .span12
+          // Nav for Amelia
+          /.nav_wrap
+          /  = render 'shared/navbar'
 
           .fix_iframe_container
             = bootstrap_flash
