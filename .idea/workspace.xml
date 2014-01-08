@@ -12,7 +12,7 @@
     <file path="/amelia.html.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389102763295" ignored="false" />
     <file path="/application.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387023466264" ignored="false" />
     <file path="/app.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387024403863" ignored="false" />
-    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389100289001" ignored="false" />
+    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190004349" ignored="false" />
     <file path="/development.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388942000522" ignored="false" />
     <file path="/mycache_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032897613" ignored="false" />
     <file path="/routes.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032846546" ignored="false" />
@@ -38,7 +38,7 @@
     <file path="/welcome_email.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389023806699" ignored="false" />
     <file path="/check_users.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389032796851" ignored="false" />
     <file path="/check_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389033235100" ignored="false" />
-    <file path="/global.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389179106299" ignored="false" />
+    <file path="/global.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190096106" ignored="false" />
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,25 +71,25 @@
       <file leaf-file-name="app.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="2" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
+            <state line="12" column="29" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.sass" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="global.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="2" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+            <state line="15" column="2" selection-start="515" selection-end="515" vertical-scroll-proportion="0.3168654">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.7">
+            <state line="28" column="30" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,9 +145,9 @@
         <option value="$PROJECT_DIR$/app/views/shared/_navbar.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -939,23 +939,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="30" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="2" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
+        <state line="12" column="29" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="2" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.7">
+        <state line="15" column="2" selection-start="515" selection-end="515" vertical-scroll-proportion="0.3168654">
           <folding />
         </state>
       </provider>
