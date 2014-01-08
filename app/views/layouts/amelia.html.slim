@@ -12,6 +12,10 @@ html lang="en"
     /Ruby var to js
     = include_gon
 
+    - if Rails.env == 'development'
+      = stylesheet_link_tag "pages/dev"
+
+
     /END CUSTOM
 
     /! Le HTML5 shim, for IE6-8 support of HTML elements
