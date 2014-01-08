@@ -3,8 +3,8 @@
   <component name="DataSourceManagerImpl" format="xml" hash="2196175556">
     <data-source source="LOCAL" name="Rails template: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e535c9f5-cd5c-4a06-92fe-b3368427773f">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/whoisit</jdbc-url>
-      <user-name>whoisit</user-name>
+      <jdbc-url>jdbc:postgresql:whoisit</jdbc-url>
+      <user-name>stas</user-name>
       <user-password>dfcfdfc7dfc3dfdedfd8dfcfdfc7dfc7dfdfdfd9</user-password>
       <libraries>
         <library>
@@ -17,8 +17,8 @@
     </data-source>
     <data-source source="LOCAL" name="Rails template: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="900399a2-7e1b-453a-95ae-42d5f8863d27">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/whoisit</jdbc-url>
-      <user-name>whoisit</user-name>
+      <jdbc-url>jdbc:postgresql:whoisit</jdbc-url>
+      <user-name>stas</user-name>
       <user-password>dfcfdfc7dfc3dfdedfd8dfcfdfc7dfc7dfdfdfd9</user-password>
       <libraries>
         <library>
@@ -31,8 +31,8 @@
     </data-source>
     <data-source source="LOCAL" name="Rails template: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="9d355eb0-fc9b-4b8e-9bf1-460d0473a524">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/whoisit</jdbc-url>
-      <user-name>whoisit</user-name>
+      <jdbc-url>jdbc:postgresql:whoisit</jdbc-url>
+      <user-name>stas</user-name>
       <user-password>dfcfdfc7dfc3dfdedfd8dfcfdfc7dfc7dfdfdfd9</user-password>
       <libraries>
         <library>
