@@ -10,7 +10,7 @@
  *
  *= require_self
 
-*= require pages/global
+ *= require pages/global
  *= require pages/app
 
  *= require_tree .
