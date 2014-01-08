@@ -45,7 +45,7 @@ var fotoNum;
 
 // Counter , listId
 var  counter = 0;
-var listId = [];
+var listId;
 
 var orientPhone = 'V';
 var orientFoto;
@@ -224,9 +224,10 @@ function nextFoto () {
     iLoad = 0;
     // Определяем номер новой группы и перезаписываем глоб. переменную
     indexG = indexG + 1;
+  console.log('nextFoto: id ' + indexG);
 
     if (indexG > (Object.keys(Groups.artists).length - 1)) {
-        console.log('перебрали все группы в этой категории. Начать сначала? Тогда результат угаданных обнулится.');    // todo!!!
+        console.log('Перебрали все группы в этой категории. Начать сначала? Фото одних и тех же групп будут меняться. Результат угаданных обнулится.');    // todo!!!
         return false;
     } else {
 
@@ -239,6 +240,17 @@ function nextFoto () {
             TrueGroup = a.name;
             TrueGroupId = a.id;
 
+          for (var i in listId) {
+
+            if (TrueGroupId == listId[i]) {
+              console.log(listId[i] + 'уже угадана идем на начало nextFoto');
+
+              nextFoto();
+              return;
+            }
+
+          }
+
           console.log(TrueGroup);
 
           //pasteNames();
@@ -248,9 +260,8 @@ function nextFoto () {
             if (a.hasOwnProperty('images')) {
 
                 // Случайная фотка из всех что есть у группы//TODO стоит определять фотку не меньше чем... в последующих ф-ях перед вставкой фото
-                fotoNum = random(1, (a.images.length - 1) );
+                fotoNum = random(1, (Object.keys(a.images).length - 1) );
                 console.log('номер фото ' + fotoNum);
-
 
               if (a.images.hasOwnProperty(fotoNum)) {
 
@@ -307,22 +318,22 @@ function otherOk(a, num) {
 
   console.log('номер другого случайного фото ' + num);
 
-
   var src = a.images[num].url;
   PasteNewPhoto(src);
 
 }
 
+
+
 function chooseRandom(a) {
+  var temp = random(0, (Object.keys(a.images).length - 1));
 
-  var temp = random(0, (a.images.length - 1));
-
-  if (temp !== fotoNum) {
-    fotoNum = temp;
-    otherOk(a,fotoNum);
-  } else {
-    chooseRandom(a);
-  }
+     if (temp !== fotoNum) {
+       fotoNum = temp;
+       otherOk(a, fotoNum);
+     } else {
+       chooseRandom(a);
+     }
 
 }
 

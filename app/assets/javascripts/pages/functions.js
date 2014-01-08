@@ -246,6 +246,9 @@ function success () {
   User.count = parseInt(User.count) + 1;
   updatePageCounter(User.count);
 
+
+  listId.push(TrueGroupId);
+
   if (User.props.list.length == 0) {
 
     User.props.list += TrueGroupId;
@@ -360,6 +363,7 @@ function getUser(vk_id) {
       User = data;
       console.log('user ok');
 
+      listId = User.props.list.split(',');
 
       updatePageCounter(User.count);
 
