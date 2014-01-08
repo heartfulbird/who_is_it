@@ -391,10 +391,11 @@ function initEvents() {
 
 
   // Получаем idVk
-  vkID = '111';
-  // Запрашиваем данные по юзеру
+  //vkID = '111';
+  getVkId();
 
-  getUser(vkID);
+  // Запрашиваем данные по юзеру
+  //  getUser(vkID);
 
 
 }
