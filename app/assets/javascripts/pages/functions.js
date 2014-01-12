@@ -164,9 +164,9 @@ function pasteNames(orient) {
 
   // + 3 Рандомных шруппы для вариантов угадывания
 
-  var b = Groups.artists[random(0, 99)].name;
-  var c = Groups.artists[random(0, 99)].name;
-  var d = Groups.artists[random(0, 99)].name;
+  var b = Groups[catG].artists[random(0, 99)].name;
+  var c = Groups[catG].artists[random(0, 99)].name;
+  var d = Groups[catG].artists[random(0, 99)].name;
 
   // Все группы в массиве
   var arr = [a, b, c, d];
@@ -263,6 +263,20 @@ function success () {
   updateCache(User.id_vk, User);
 
 
+  if (User.count == 100) {
+    // Здесь надо поздравить и дать варианты дествий:
+    // поделиться, пройтись еще раз с новыми фотками... и тд. посмотреть общий рейтинг. Рейтинг может быть тоже разный кто больше всех угадал кто быстрее всех продвигается и тп
+    console.log('100 из 100! Поздравляем! Вы Гуру! Можете подклиться с друзьями своим результатом. Можно начать сначала, фото будут меняться. Попробуем?')
+
+  } else {
+
+    // Показать следующую фотку
+    setTimeout(function () {
+      nextFoto();
+    }, 1000);
+
+  }
+
 }
 
 function notRight () {
@@ -294,11 +308,6 @@ function approve(this_) {
     showSuccess();
 
 
-    // Показать следующую фотку
-    setTimeout(function () {
-          nextFoto();
-        }, 1000);
-
   } else {
     // Если группа НЕ угадана
     // - надо сообщить об этом
@@ -316,33 +325,41 @@ function approve(this_) {
 }
 
 
-function groupsInfo() {
+function groupsInfo(cat) {
 
   /*
    / Cache Vars
    */
-
+  catG = cat;
 
   console.log('GROUPS:');
-  console.log(gon.groups_info);
+  console.log(gon[catG]);
 
-  // Если есть группы из кэша - запускаем в работу
 
-  if (parseInt(gon.groups_info) != 0) {
-
-    Groups = gon.groups_info;
-    console.log('группы есть начинаем');
+  if (Groups.hasOwnProperty(catG)) {
+    console.log('эта категория уже есть в Groups, начинаем');
 
     nextFoto();
-
   } else {
-    // иначе Api
-    console.log('групп нет - Api');
+    // Если есть группы из кэша с сервера - запускаем в работу
+    if (parseInt(gon[catG]) != 0) {
 
-    getGroupsApi();
+      Groups[catG] = gon[catG];
+      console.log('группы есть начинаем');
 
+      nextFoto();
+
+    } else {
+      // иначе Api
+      console.log('групп нет - Api');
+
+      getGroupsApi(catG);
+
+
+    }
 
   }
+
 
 
 }
@@ -370,7 +387,7 @@ function getUser(vk_id) {
 
       enterUsers(vk_id);
 
-      groupsInfo();
+      groupsInfo('hot');
     }
   });
 
@@ -395,11 +412,11 @@ function initEvents() {
 
 
   // Получаем idVk
-  //vkID = '111';
   getVkId();
 
   // Запрашиваем данные по юзеру
-  //  getUser(vkID);
+  vkID = '111';
+  getUser(vkID);
 
 
 }

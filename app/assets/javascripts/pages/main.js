@@ -19,12 +19,16 @@
 /*
  * Фиксированные переменные
  */
-
-var apiUrl = 'http://developer.echonest.com/api/v4/artist/top_hottt?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&results=100&start=0&bucket=images&callback=?';
+// ?start = ... - свежесть групп
+var apiUrl = {
+  hot: 'http://developer.echonest.com/api/v4/artist/top_hottt?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&results=100&start=0&bucket=images&callback=?',
+  dance: 'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&genre=pop&bucket=images&callback=?',
+  world: 'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&bucket=images&callback=?'
+}
 var phoneH = 339;
 var phoneW = 192;
 var H_max_width = 275;
-var vkID
+var vkID;
 
 
 
@@ -33,7 +37,8 @@ var vkID
  */
 var User = null;
 
-var Groups = null;
+var Groups = {};
+var catG;
 // ID текущей угадываемой группы
 var indexG = -1;
 // ЕЕ параметры - объект (внутри пока только name)
@@ -226,90 +231,92 @@ function nextFoto () {
     indexG = indexG + 1;
   console.log('nextFoto: id ' + indexG);
 
-    if (indexG > (Object.keys(Groups.artists).length - 1)) {
-        console.log('Перебрали все группы в этой категории. Начать сначала? Фото одних и тех же групп будут меняться. Результат угаданных обнулится.');    // todo!!!
-        return false;
-    } else {
-
-        if (Groups.hasOwnProperty('artists')) {
 
 
-            // Слудующая группа которую угадываем
-            var a = Groups.artists[indexG];
-            // ЕЕ название и id
-            TrueGroup = a.name;
-            TrueGroupId = a.id;
 
-          for (var i in listId) {
+    if (Groups[catG].hasOwnProperty('artists')) {
+      if (indexG > (Object.keys(Groups[catG].artists).length - 1)) {
+        // начинаем просмотр сначала
+        indexG = 0;
 
-            if (TrueGroupId == listId[i]) {
-              console.log(listId[i] + 'уже угадана идем на начало nextFoto');
+      }
 
-              nextFoto();
-              return;
+        // Слудующая группа которую угадываем
+        var a = Groups[catG].artists[indexG];
+        // ЕЕ название и id
+        TrueGroup = a.name;
+        TrueGroupId = a.id;
+
+      for (var i in listId) {
+
+        if (TrueGroupId == listId[i]) {
+          console.log(listId[i] + 'уже угадана идем на начало nextFoto');
+
+          nextFoto();
+          return;
+        }
+
+      }
+
+      console.log(TrueGroup);
+
+      //pasteNames();
+
+
+        // Фото артиста a
+        if (a.hasOwnProperty('images')) {
+
+            // Случайная фотка из всех что есть у группы//TODO стоит определять фотку не меньше чем... в последующих ф-ях перед вставкой фото
+            fotoNum = random(1, (Object.keys(a.images).length - 1) );
+            console.log('номер фото ' + fotoNum);
+
+          if (a.images.hasOwnProperty(fotoNum)) {
+
+            if (a.images[fotoNum].hasOwnProperty('url')) {
+              var src = a.images[fotoNum].url;
+
+              // Вставляю фотку  (очистить предыдущее фото)
+
+              PasteNewPhoto(src);
+
+            } else {
+
+              otherFoto();
+
             }
+
+
+          } else {
+
+            otherFoto();
 
           }
 
-          console.log(TrueGroup);
-
-          //pasteNames();
-
-
-            // Фото артиста a
-            if (a.hasOwnProperty('images')) {
-
-                // Случайная фотка из всех что есть у группы//TODO стоит определять фотку не меньше чем... в последующих ф-ях перед вставкой фото
-                fotoNum = random(1, (Object.keys(a.images).length - 1) );
-                console.log('номер фото ' + fotoNum);
-
-              if (a.images.hasOwnProperty(fotoNum)) {
-
-                if (a.images[fotoNum].hasOwnProperty('url')) {
-                  var src = a.images[fotoNum].url;
-
-                  // Вставляю фотку  (очистить предыдущее фото)
-
-                  PasteNewPhoto(src);
-
-                } else {
-
-                  otherFoto();
-
-                }
-
-
-              } else {
-
-                otherFoto();
-
-              }
-
-
-            } else {
-                console.log('У этой группы нет фоток попробуем следующую');
-                nextFoto();
-
-            }
-
 
         } else {
-            console.log('Groups no property artists')
-          indexG = -1;
-
-          setTimeout(function () {
-
-             if (Groups.hasOwnProperty('artists') == false) {
-              getGroupsApi();
-             }
-
-
-          }, 5000);
-
-
+            console.log('У этой группы нет фоток попробуем следующую');
+            nextFoto();
 
         }
+
+
+    } else {
+        console.log('Groups[catG] no property artists')
+      indexG = -1;
+
+      setTimeout(function () {
+
+         if (Groups[catG].hasOwnProperty('artists') == false) {
+          getGroupsApi();
+         }
+
+
+      }, 5000);
+
+
+
     }
+
 
 }
 
@@ -347,7 +354,7 @@ function otherFoto () {
   }
 
 
-  var a = Groups.artists[indexG];
+  var a = Groups[catG].artists[indexG];
 
   chooseRandom(a);
 
@@ -358,7 +365,7 @@ function otherFoto () {
 var groupstoglobal = function (response) {
 
     // Независимо откуда получили группы - пишем их в глб объект для дальнейшей работы
-    Groups = response;
+    Groups[catG] = response;
 
     // И запускаем ф-ю
     nextFoto();
@@ -376,7 +383,7 @@ var groupsToCache = function (data) {
 
   if (response.hasOwnProperty('status') && response.status.message == 'Success') {
 
-    updateCache('hot', response);
+    updateCache(catG, response);
 
 
     // и отдать их в работу
@@ -392,9 +399,9 @@ var groupsToCache = function (data) {
 }
 
 // Запрос групп по API
-function getGroupsApi() {
+function getGroupsApi(cat) {
     $.ajax({
-        url: apiUrl,
+        url: apiUrl[cat],
         dataType: 'jsonp',
         jsonpCallback: 'groupsToCache',
         jsonp: 'jsonp'

@@ -3,11 +3,19 @@ class WelcomeController < ApplicationController
   def index
 
     # Есть группы в кэшэ если есть берем если нет - инфо что нет - на фронтэнде будем делать фпи запрос
-    @groups_info = groups_cache('hot')
+    #@groups_info = groups_cache('hot')
+
+    @hot = groups_cache('hot')
+    @dance = groups_cache('dance')
+    @world = groups_cache('world')
+
 
     # Доступность в js
-    gon.groups_info = @groups_info
+    #gon.groups_info = @groups_info
 
+    gon.hot = @hot
+    gon.dance = @dance
+    gon.world = @world
 
     # jbuilder + команда gon.jbuilder + файл get_data.json.jbuilder - не нужны чтобы использовать gon
     # возможно это надо для авто преобразования данных из базы в удобный формат для js

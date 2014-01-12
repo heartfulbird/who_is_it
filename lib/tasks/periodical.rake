@@ -36,7 +36,8 @@ def toBase
           if  last < now
             # '10 min expire, rec base , clear cache'
 
-            # пишем
+            # пишем     попробовать просто User.update(user) [хотя по идее update(user[:id] - это говорит куда сохранять
+            # или User.update(user[:id], count: user[:count], props: user[:props])
             if User.update(user[:id], count: user[:count], props: {list: user[:props][:list]})
 
               # То что записалось удаляем из временного списка
