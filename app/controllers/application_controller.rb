@@ -58,7 +58,15 @@ class ApplicationController < ActionController::Base
       @user = User.where(id_vk: key)
 
       if @user.empty?
-        @user = User.new id_vk: key, count: 0, props: {list: ''}
+        @user = User.new id_vk: key, count: 0, props: {
+                                                        list: '',
+                                                        count_hot: '0',
+                                                        count_dance: '0',
+                                                        count_world: '0',
+                                                        status_hot: 'Новичек',
+                                                        status_dance: 'Новичек',
+                                                        status_world: 'Новичек'
+        }
         @user.save
       else
         @user = @user.first

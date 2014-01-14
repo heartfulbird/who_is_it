@@ -244,7 +244,12 @@ function success () {
 
   // увеличить счетчик угаданных в переменной и на  странице
   User.count = parseInt(User.count) + 1;
-  updatePageCounter(User.count);
+
+  var catCount = parseInt(User.props['count_' + catG])  + 1;
+
+  User.props['count_'+catG] = catCount;
+
+  updatePageCounter(catCount);
 
 
   listId.push(TrueGroupId);
@@ -335,6 +340,8 @@ function groupsInfo(cat) {
   console.log('GROUPS:');
   console.log(gon[catG]);
 
+  updatePageCounter(parseInt(User.props['count_'+catG]));
+
 
   if (Groups.hasOwnProperty(catG)) {
     console.log('эта категория уже есть в Groups, начинаем');
@@ -382,7 +389,7 @@ function getUser(vk_id) {
 
       listId = User.props.list.split(',');
 
-      updatePageCounter(User.count);
+      updatePageCounter(parseInt(User.props['count_hot']));
 
 
       enterUsers(vk_id);
@@ -414,9 +421,9 @@ function initEvents() {
   // Получаем idVk
   getVkId();
 
-  // Запрашиваем данные по юзеру
-  vkID = '111';
-  getUser(vkID);
+// Запрашиваем данные по юзеру
+//  vkID = '111';
+//  getUser(vkID);
 
 
 }

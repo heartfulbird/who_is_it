@@ -65,6 +65,22 @@ function updateCache (key, value) {
 }
 
 
+function clearUsers(key) {
+
+
+  $.ajax({
+    url: '/clear_users' + '/' + key,
+    type: 'post',
+    success: function (data) {
+
+      console.log('CACHE: ');
+      console.log(data)
+
+    }
+  });
+
+}
+
 
 //$(function () {
 //

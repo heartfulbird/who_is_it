@@ -49,4 +49,17 @@ class MycacheController < ApplicationController
 
   end
 
+  def clear_users
+    if params[:key]
+      if params[:key] = 'all'
+        @result = User.destroy_all
+      else
+        @result = User.find(params[:key]).destroy
+      end
+
+      render json: @result.to_json
+    end
+
+  end
+
 end

@@ -65,6 +65,7 @@ Template::Application.routes.draw do
   get 'enter_users/:key' => 'mycache#enter_users'
 
   get 'check_users/:key' => 'mycache#check_users'
+  post 'clear_users/:key' => 'mycache#clear_users', method: :post
 
 
 end

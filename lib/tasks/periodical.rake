@@ -38,7 +38,7 @@ def toBase
 
             # пишем     попробовать просто User.update(user) [хотя по идее update(user[:id] - это говорит куда сохранять
             # или User.update(user[:id], count: user[:count], props: user[:props])
-            if User.update(user[:id], count: user[:count], props: {list: user[:props][:list]})
+            if User.update(user[:id], count: user[:count], props: user[:props])
 
               # То что записалось удаляем из временного списка
               new_obj.delete(id_vk)
@@ -64,6 +64,9 @@ def toBase
   end
 
 end
+
+
+
 
 desc 'Every 10 minute rec in base and clear cache User older then 10 min'
 
