@@ -425,7 +425,6 @@ function initEvents() {
 //  vkID = '111';
 //  getUser(vkID);
 
-
 }
 
 
