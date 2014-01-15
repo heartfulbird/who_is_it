@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72366523-0e57-41b5-ae3c-a2d843b6468c" name="Default" comment="ignore idea remove idea from git">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.slim" afterPath="$PROJECT_DIR$/app/views/welcome/index.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/template.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="template.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,7 +108,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="282" column="1" selection-start="5790" selection-end="5790" vertical-scroll-proportion="0.02819549">
+            <state line="389" column="1" selection-start="7611" selection-end="7611" vertical-scroll-proportion="0.81766915">
               <folding>
                 <element signature="n#!!block;n#statusPage#0" expanded="false" />
                 <element signature="n#!!block;n#congratulations#0" expanded="false" />
@@ -845,7 +851,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="1" selection-start="5790" selection-end="5790" vertical-scroll-proportion="0.02819549">
+        <state line="389" column="1" selection-start="7611" selection-end="7611" vertical-scroll-proportion="0.81766915">
           <folding>
             <element signature="n#!!block;n#statusPage#0" expanded="false" />
             <element signature="n#!!block;n#congratulations#0" expanded="false" />
