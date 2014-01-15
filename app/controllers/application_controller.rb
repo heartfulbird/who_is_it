@@ -63,9 +63,9 @@ class ApplicationController < ActionController::Base
                                                         count_hot: '0',
                                                         count_dance: '0',
                                                         count_world: '0',
-                                                        status_hot: 'Новичек',
-                                                        status_dance: 'Новичек',
-                                                        status_world: 'Новичек'
+                                                        status_hot: '0',
+                                                        status_dance: '0',
+                                                        status_world: '0'
         }
         @user.save
       else

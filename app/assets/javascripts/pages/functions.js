@@ -19,6 +19,10 @@ var animateEase = 'easeOutQuad';
 
 var ani_time = 800;
 
+var status1 = 'Знаток',
+    status2 = 'Маста',
+    status3 = 'Гуру';
+
 function rotateH () {
 
   var left = (oneLeft - offsetH).toString() + 'px';
@@ -213,6 +217,95 @@ function hidePreloader() {
 
 }
 
+function bigger(i) {
+  var status = $('.s'+ i +' .status');
+
+
+  status.addClass('bigger');
+
+  setTimeout(function () {
+    status.removeClass('bigger');
+
+  }, 1500)
+}
+
+function statusPage(i) {
+
+  // Показываем один текущий статус
+
+  if (!isNaN(parseInt(i))) {
+
+    for (var z = 1; z <= 3; z++) {
+
+      if (z == i) {
+        $('.s' + z).show();
+        bigger(z);
+      } else {
+        $('.s' + z).hide();
+      }
+
+    }
+
+
+  }
+
+}
+
+function congratulations(i) {
+
+  var cat = { hot: '100 Самых актуальных артистов мира в танцевальной музыке', dance: '100 самых известн ых артистов в стиле Dance', world: '100 самых известных артистов мира' }
+
+  if (i == 0) {
+    //$('.modal .congrat').text('Неплохо!')
+    console.log('на 30 нужна прикольная морда выезж-я сбоку экрана с фразой неплохо!')
+  }
+
+  if (i == 1) {
+    $('.modal .congrat').text('Поздравляем! Вы угадали 50 артистов. Это уже уровень! Ваш статус "Знаток".');
+  }
+
+  if (i == 2) {
+    $('.modal .congrat').text('Отличный результат! Теперь ваш статус "МАСТА".');
+  }
+
+  if (i == 3) {
+    $('.modal .congrat').text('О да! 100 из 100. Вы абсолютный Гуру в категории "'+ cat[catG] + '".');
+  }
+
+  $('.modal').modal();
+
+  $('.modal').on('hidden.bs.modal', function (e) {
+    statusPage(i)
+  });
+}
+
+
+ function checkStatus(count) {
+
+  if (count == 30) {
+    congratulations(0);
+  }
+
+  if (count == 50) {
+    User.props['status_'+catG] = 1;
+    congratulations(1);
+//    statusPage(1);
+  }
+
+  if (count == 70) {
+    User.props['status_' + catG] = 2;
+    congratulations(2);
+//    statusPage(2);
+  }
+
+  if (count == 100) {
+    User.props['status_' + catG] = 3;
+    congratulations(3);
+//    statusPage(3);
+  }
+
+
+}
 
 
 function showSuccess() {
@@ -220,6 +313,8 @@ function showSuccess() {
   $('#result').text('OK');
 
 }
+
+
 
 function updatePageCounter(counter) {
 
@@ -251,6 +346,8 @@ function success () {
 
   updatePageCounter(catCount);
 
+  checkStatus(catCount);
+
 
   listId.push(TrueGroupId);
 
@@ -264,13 +361,15 @@ function success () {
 
   }
       //.push(TrueGroupId);
+  setTimeout(function () {
+    updateCache(User.id_vk, User);
+  }, 200);
 
-  updateCache(User.id_vk, User);
 
 
   if (User.count == 100) {
     // Здесь надо поздравить и дать варианты дествий:
-    // поделиться, пройтись еще раз с новыми фотками... и тд. посмотреть общий рейтинг. Рейтинг может быть тоже разный кто больше всех угадал кто быстрее всех продвигается и тп
+    // поделиться, пройтись еще раз с новыми фотками... и тд. посмотреть общий рейтинг. Рейтинг может быть тоже разный кто больше всех угадал кто быстрее всех продвигается и тп TODO
     console.log('100 из 100! Поздравляем! Вы Гуру! Можете подклиться с друзьями своим результатом. Можно начать сначала, фото будут меняться. Попробуем?')
 
   } else {
@@ -341,6 +440,9 @@ function groupsInfo(cat) {
   console.log(gon[catG]);
 
   updatePageCounter(parseInt(User.props['count_'+catG]));
+
+  statusPage(User.props['status_'+catG]);
+
 
 
   if (Groups.hasOwnProperty(catG)) {
@@ -418,12 +520,14 @@ function initEvents() {
   // END События
 
 
-  // Получаем idVk
+  // Получаем idVk - эта ф-ия перведет на getUser(vkID)
   getVkId();
 
-// Запрашиваем данные по юзеру
-//  vkID = '111';
-//  getUser(vkID);
+
+
+  // TEST, dev
+  vkID = '111';
+  getUser(vkID);
 
 }
 
