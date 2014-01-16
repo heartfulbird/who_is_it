@@ -516,6 +516,12 @@ function initEvents() {
     rotateV();
   });
 
+  $('body').on('click', function () {
+
+    $('.square').css('top', '-160px');
+    setTimeout(animateDown(), 1000);
+
+  });
 
   // END События
 
@@ -526,8 +532,14 @@ function initEvents() {
 
 
   // TEST, dev
-  vkID = '111';
-  getUser(vkID);
+//  vkID = '111';
+//  getUser(vkID);
+
+
+
+
+
+
 
 }
 

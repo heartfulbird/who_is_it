@@ -19,6 +19,7 @@
 
 //= require pages/vk_id
 //= require pages/cache
+//= require pages/animation
 //= require pages/functions
 //= require pages/main
 
