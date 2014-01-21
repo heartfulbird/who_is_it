@@ -62,7 +62,7 @@ var iLoad = 0;
  */
 
 function scanCase (src, fotoH, fotoW) {
-console.log('scanCase ');
+//console.log('scanCase ');
     /*
      *  Телефон стоит вертикально
      * */

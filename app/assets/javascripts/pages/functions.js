@@ -117,8 +117,8 @@ function asort (arr) {
 
 function bgPaste(src) {
 
-    var str = "url("+ src +") no-repeat";
-    console.log(str);
+    var str = "url('"+ src +"') no-repeat";
+//    console.log(str);
     $(".foto").css({background: str});
 
 }
