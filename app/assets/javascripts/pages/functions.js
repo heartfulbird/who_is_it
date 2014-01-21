@@ -257,24 +257,30 @@ function congratulations(i) {
 
   if (i == 0) {
     //$('.modal .congrat').text('Неплохо!')
+    $('.square').css('top', '-160px');
+    setTimeout(animateDown(), 1000);
     console.log('на 30 нужна прикольная морда выезж-я сбоку экрана с фразой неплохо!')
   }
 
   if (i == 1) {
-    $('.modal .congrat').text('Поздравляем! Вы угадали 50 артистов. Это уже уровень! Ваш статус "Знаток".');
+    $('#congrat .congrat').text('Поздравляем! Вы угадали 50 артистов. Это уже уровень! Ваш статус "Знаток".');
   }
 
   if (i == 2) {
-    $('.modal .congrat').text('Отличный результат! Теперь ваш статус "МАСТА".');
+    $('#congrat .congrat').text('Отличный результат! Теперь ваш статус "МАСТА".');
   }
 
   if (i == 3) {
-    $('.modal .congrat').text('О да! 100 из 100. Вы абсолютный Гуру в категории "'+ cat[catG] + '".');
+    $('#congrat .congrat').text('О да! 100 из 100. Вы абсолютный Гуру в категории "'+ cat[catG] + '".');
   }
 
-  $('.modal').modal();
 
-  $('.modal').on('hidden.bs.modal', function (e) {
+  $('.modal').hide();
+  $('#congrat').show();
+
+  $('#congrat').modal();
+
+  $('#congrat').on('hidden.bs.modal', function (e) {
     statusPage(i)
   });
 }
@@ -469,8 +475,14 @@ function groupsInfo(cat) {
 
   }
 
+  var cat_txt;
+  if (catG == 'hot') {  cat_txt=' Hottt'}
+  if (catG == 'dance') {cat_txt = ' Dance'}
+  if (catG == 'world') {cat_txt = ' World'}
+  $('#category .lobster').text(cat_txt);
 
-
+  $('.modal').modal('hide');
+  setInterval($('.modal').hide(), 400);
 }
 
 
@@ -516,10 +528,17 @@ function initEvents() {
     rotateV();
   });
 
-  $('body').on('click', function () {
+  $('#category').on('click', function () {
+    $('.modal').hide();
+    $('#change_category').show();
+    $('#change_category').modal();
+  });
 
-    $('.square').css('top', '-160px');
-    setTimeout(animateDown(), 1000);
+
+  $('body').on('click', function () {
+// Анимация
+//    $('.square').css('top', '-160px');
+//    setTimeout(animateDown(), 1000);
 
   });
 
@@ -532,8 +551,8 @@ function initEvents() {
 
 
   // TEST, dev
-//  vkID = '111';
-//  getUser(vkID);
+  vkID = '111';
+  getUser(vkID);
 
 
 

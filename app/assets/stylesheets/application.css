@@ -12,6 +12,5 @@
 
  *= require pages/global
  *= require pages/app
-
  *= require_tree .
  */

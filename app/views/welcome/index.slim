@@ -8,6 +8,10 @@
 
 h1.logo.lobster Top100
 
+#category
+  .lobster Hottt
+
+
 // Amelia Category Hottt, Dance, World
 //h1.logo.lobster Hottt
 
@@ -84,8 +88,28 @@ h1.logo.lobster Top100
 #result.hide result
 
 
+.modal.fade#change_category
+  div class="modal-dialog"
+    div class="modal-content"
+      /div class="modal-header"
+      /  button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
+      /  h4 class="modal-title" Выберите категорию Top100
+      div class="modal-body"
+
+        .span4 onclick="groupsInfo('hot')" Hottt
+        .span4 onclick="groupsInfo('dance')" Dance
+        .span4 onclick="groupsInfo('world')" World
+
+
+
+      /div class="modal-footer"
+        /button type="button" class="btn btn-default" data-dismiss="modal" Close
+        /button type="button" class="btn btn-primary" Save changes
+
+
+
 //.btn#error onclick="PasteNewPhoto ('http://jdj.jpg');" img script error, check
-div class="modal fade"
+.modal.fade#congrat
   div class="modal-dialog"
     div class="modal-content"
       div class="modal-header"
@@ -96,6 +120,9 @@ div class="modal fade"
       div class="modal-footer"
         button type="button" class="btn btn-default" data-dismiss="modal" Close
         button type="button" class="btn btn-primary" Save changes
+
+
+
 
 
 .square.sq1
