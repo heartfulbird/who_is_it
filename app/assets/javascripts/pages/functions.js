@@ -763,9 +763,6 @@ function initEvents() {
     var APP_ID = '4072724';
 
     var owner_id = vkID;
-//    var club = postVars[1];
-//    var date = postVars[2];
-//    var artist = postVars[3];
 
     VK.init({
       apiId: APP_ID
@@ -774,10 +771,8 @@ function initEvents() {
     var post = {
       owner_id: owner_id,
       message: 'У меня статус ' + status + ' в приложении TOP100!',
-
       //message: club + '\n' + date + '\n' + artist//,
       attachments : 'photo-68411319_323993354,http://vk.com/app4072724' // <type><owner_id>_<media_id>
-//      attachments : 'http://vk.com/app4072724'
     }
 
     VK.api('wall.post', post, function (r) {
