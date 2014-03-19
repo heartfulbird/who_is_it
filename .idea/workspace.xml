@@ -45,7 +45,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389297521709" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395265135935" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395265280467" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -90,7 +90,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="778" column="71" selection-start="15160" selection-end="15160" vertical-scroll-proportion="0.17489712">
+            <state line="778" column="45" selection-start="15134" selection-end="15134" vertical-scroll-proportion="0.17489712">
               <folding />
             </state>
           </provider>
@@ -776,7 +776,11 @@
       <created>1395265138466</created>
       <updated>1395265138466</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="test vk post__ photo, link__">
+      <created>1395265282186</created>
+      <updated>1395265282186</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,7 +849,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test vk post__ photo, link_" />
+    <option name="LAST_COMMIT_MESSAGE" value="test vk post__ photo, link__" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -880,6 +884,7 @@
     <MESSAGE value="test vk post__" />
     <MESSAGE value="test vk post__ photo, link" />
     <MESSAGE value="test vk post__ photo, link_" />
+    <MESSAGE value="test vk post__ photo, link__" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -998,7 +1003,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="778" column="71" selection-start="15160" selection-end="15160" vertical-scroll-proportion="0.17489712">
+        <state line="778" column="45" selection-start="15134" selection-end="15134" vertical-scroll-proportion="0.17489712">
           <folding />
         </state>
       </provider>
