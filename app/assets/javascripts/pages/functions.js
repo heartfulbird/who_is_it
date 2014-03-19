@@ -776,7 +776,7 @@ function initEvents() {
       message: 'У меня статус ' + status + ' в приложении TOP100!',
 
       //message: club + '\n' + date + '\n' + artist//,
-      attachments : 'photo926167_263474816', // <type><owner_id>_<media_id>
+      attachments : 'photo926167_68411319', // <type><owner_id>_<media_id>
       attachments : 'http://vk.com/app4072724'
     }
 
