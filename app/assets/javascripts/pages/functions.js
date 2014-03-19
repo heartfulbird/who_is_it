@@ -800,7 +800,7 @@ function initEvents() {
 
 
   //ufoShow test
-//    ufoShow();
+    ufoShow();
 //
   });
 
