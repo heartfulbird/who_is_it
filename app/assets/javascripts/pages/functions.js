@@ -779,7 +779,7 @@ function initEvents() {
       // attachments : 'http://vk.com/audio?performer=1&q=' + artist
     }
 
-    VK.Api.call('wall.post', post, function (r) {
+    VK.api('wall.post', post, function (r) {
       if (r.response) {
         var resp = JSON.stringify(r.response);
         console.log(resp)
