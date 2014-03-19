@@ -268,12 +268,12 @@ function statusPage(i) {
 
     for (var z = 1; z <= 3; z++) {
 
-//      if (z <= parseInt(i)) {
-//        $('.s' + z).show();
-//        bigger(z);
-//      } else {
-//        $('.s' + z).hide();
-//      }
+      if (z <= parseInt(i)) {
+        $('.s' + z).show();
+        bigger(z);
+      } else {
+        $('.s' + z).hide();
+      }
 
     }
 
@@ -820,8 +820,11 @@ function initEvents() {
 
 
   // TEST, dev
-//  vkID = '111';
-//  getUser(vkID);
+  if (gon.env !== 'production') {
+    vkID = '111';
+    getUser(vkID);
+  }
+
 
 
 

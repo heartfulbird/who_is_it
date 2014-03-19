@@ -17,6 +17,12 @@ class WelcomeController < ApplicationController
     gon.dance = @dance
     gon.world = @world
 
+    if Rails.env == 'production'
+      gon.env = 'production'
+    else
+      gon.env = 'other'
+    end
+
     # jbuilder + команда gon.jbuilder + файл get_data.json.jbuilder - не нужны чтобы использовать gon
     # возможно это надо для авто преобразования данных из базы в удобный формат для js
     # например когда будет
