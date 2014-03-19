@@ -758,6 +758,7 @@ function initEvents() {
 
   $('.post').on('click', function() {
 
+    var status = $('#congratulation .status_name').text();
 
     var APP_ID = '4072724';
 
@@ -772,11 +773,11 @@ function initEvents() {
 
     var post = {
       owner_id: owner_id,
-      message: 'ok'
+      message: 'У меня статус ' + status + ' в приложении TOP100!',
 
       //message: club + '\n' + date + '\n' + artist//,
-      //attachments : 'photo11763511_263474816' // <type><owner_id>_<media_id>
-      // attachments : 'http://vk.com/audio?performer=1&q=' + artist
+      attachments : 'photo926167_263474816', // <type><owner_id>_<media_id>
+      attachments : 'http://vk.com/app4072724'
     }
 
     VK.api('wall.post', post, function (r) {
@@ -797,6 +798,10 @@ function initEvents() {
 // Анимация
 //    $('.square').css('top', '-160px');
 //    setTimeout(animateDown(), 1000);
+
+    VK.api('photos.getAlbums', {owner_id: vkID}, function (r) {
+      console.log(r);
+    });
 
 
   //ufoShow test
