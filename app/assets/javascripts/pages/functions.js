@@ -794,14 +794,14 @@ function initEvents() {
 //    $('.square').css('top', '-160px');
 //    setTimeout(animateDown(), 1000);
 
-    VK.api('photos.getAlbums', {gid: 68411319}, function (r) {
-      console.log(r);
-    });
+//    VK.api('photos.getAlbums', {gid: 68411319}, function (r) {
+//      console.log(r);
+//    });
 
 
   //ufoShow test
-    ufoShow();
-//
+//    ufoShow();
+
   });
 
   // END События
