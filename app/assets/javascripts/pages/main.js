@@ -226,6 +226,14 @@ function PasteNewPhoto (src) {
 }
 
 function nextFoto () {
+
+  // CСбрасываем лист если угадано уже 100
+
+  if (listId.length == 100) {
+    User.props.list = '';
+    listId = [];
+  }
+
     iLoad = 0;
     // Определяем номер новой группы и перезаписываем глоб. переменную
     indexG = indexG + 1;

@@ -268,7 +268,7 @@ function statusPage(i) {
 
     for (var z = 1; z <= 3; z++) {
 
-      if (z <= i) {
+      if (z <= parseInt(i)) {
         $('.s' + z).show();
         bigger(z);
       } else {
@@ -347,6 +347,12 @@ function stopSwim() {
 
 function ufoFade(ufo) {
   console.log('ufoFade');
+
+//  Если 100 и нажали продолжить то надо скинуть список и статус в этой категории
+
+
+
+
 
   ufo.animate({'margin-left': '-1000px'}, 1500);
   setTimeout(function () {
@@ -434,7 +440,7 @@ function congratulations(i) {
     // Показать следующую фотку
     setTimeout(function () {
       nextFoto();
-    }, 1000);
+    }, 4500);
   }
   var cat_name;
 
@@ -542,16 +548,20 @@ function success () {
   // увеличить счетчик угаданных в переменной и на  странице
   User.count = parseInt(User.count) + 1;
 
+  listId.push(TrueGroupId);
+
   var catCount = parseInt(User.props['count_' + catG])  + 1;
 
   User.props['count_'+catG] = catCount;
 
   updatePageCounter(catCount);
 
-  checkStatus(catCount);
+  if (catCount !== 30 && catCount !== 50 && catCount !== 70 && catCount !== 100) {
+    nextFoto();
+  } else {
+    checkStatus(catCount);
+  }
 
-
-  listId.push(TrueGroupId);
 
   if (User.props.list.length == 0) {
 
@@ -702,7 +712,13 @@ function getUser(vk_id) {
       User = data;
       console.log('user ok');
 
-      listId = User.props.list.split(',');
+      if (User.props.list == '') {
+        listId = [];
+      } else {
+        listId = User.props.list.split(',');
+      }
+
+
 
       updatePageCounter(parseInt(User.props['count_hot']));
 
@@ -736,6 +752,9 @@ function initEvents() {
   });
 
   $('.next_foto').on('click', function () {
+
+
+
     ufoFade($('#congratulation'));
   });
 
