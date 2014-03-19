@@ -25,10 +25,10 @@ var status1 = 'Знаток',
 
 //noconsole = true;
 
-if (noconsole) {
-  window.console.log = function (txt) {
-  }
-}
+//if (noconsole) {
+//  window.console.log = function (txt) {
+//  }
+//}
 
 //else {
 //  if (window.hasOwnProperty('console')) {
