@@ -74,10 +74,10 @@
   position: absolute
   left: 100px
 
-.next_foto
-  top: 440px
-  position: absolute
-  left: 100px
+//.next_foto
+//  top: 440px
+//  position: absolute
+//  left: 100px
 
 #g1, #g2, #g3, #g4, #g5, #g6, #g7, #g8
   min-width: 187px
@@ -150,11 +150,36 @@
 
 .status_wrap
   position: absolute
-  top: 102px
-  left: 57px
+  //top: 149px
+  //left: 57px
+  //top: 65px
+  //right: -24px
+  top: 129px
+  right: 3px
   width: 210px !important
-  .row-fluid
-    display: none
+  text-align: center
+  //.row-fluid
+    //display: none
+  .icon
+    width: 53px
+    height: 57px
+    margin: 0 auto
+    margin-top: 44px
+    //float: left
+    display: inline
+
+    padding: 28px
+
+    &.s1
+      background: image-url('funny/bronze.png') no-repeat
+      background-size: 52px
+    &.s2
+      background: image-url('funny/silver.png') no-repeat
+      background-size: 52px
+    &.s3
+      background: image-url('funny/gold.png') no-repeat
+      background-size: 52px
+
 .bigger
   font-size: 35px
 
@@ -174,6 +199,7 @@
   text-align: center
   border-radius: 9px
   p
+    color: #fff
     margin-top: 11px
     -moz-transform: rotate(-45deg)
     /* Для Firefox */
@@ -185,20 +211,22 @@
     /* Для Opera */
     transform: rotate(-45deg)
 
-  &.sq2
-    left: 250px
-  &.sq3
-    left: 300px
-  &.sq4
-    left: 350px
-  &.sq5
-    left: 400px
-  &.sq6
-    left: 450px
-  &.sq7
-    left: 500px
-  &.sq8
-    left: 550px
+  //&.sq1
+  //  left: 200px
+  //&.sq2
+  //  left: 250px
+  //&.sq3
+  //  left: 300px
+  //&.sq4
+  //  left: 350px
+  //&.sq5
+  //  left: 400px
+  //&.sq6
+  //  left: 450px
+  //&.sq7
+  //  left: 500px
+  //&.sq8
+  //  left: 550px
 
 #category
   position: absolute
@@ -209,6 +237,7 @@
     width: 110px
     text-align: center
     font-size: 20px
+    text-decoration: underline
 #change_category
   .modal-body
     text-align: center
@@ -219,57 +248,159 @@
       cursor: pointer
       font-family: 'Lobster', cursive
 
+//#congratulation
+//  position: relative
+//  margin-top: 135px
+//  //start pos(hidden)
+//  //margin-left: 863px
+//  // visible pos
+//
+//  //show-position
+//  //margin-left: 82px
+//  margin-left: 1000px
+//  h2
+//    font-weight: normal
+//    color: #FFC612
+//.ufo
+//  position: absolute
+//  top: 168px
+//  width: 175px
+//  height: 228px
+//  background-size: 176px
+//  z-index: 10
+//  // norm
+//  //right: 639px
+//  right: -250px
+//  &.ufo1
+//    background: image-url('funny/ufo1.png')
+//    background-size: 178px
+//  &.ufo2
+//    background: image-url('funny/ufo2.png')
+//    background-size: 178px
+//.block
+//  position: absolute
+//  padding: 20px
+//  top: 128px
+//  // norm
+//  //left: 194px
+//  left: 1229px
+//  width: 460px
+//  height: 260px
+//  border-radius: 20px
+//  border: 4px solid #27C234
+//  //24B630
+//  background: white
+//  -webkit-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
+//  -o-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
+//  -moz-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
+//  box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
+//  h2
+//    font-weight: normal
+//    color: #FFC612
+//p.congrat
+//  margin-top: 25px
+//  font-size: 16px
+//span.count
+//  font-size: 16px
+//
+//.icon
+//  width: 77px
+//  height: 86px
+//  margin: 0 auto
+//  margin-top: 44px
+//  &.bronze
+//    background: image-url('funny/bronze.png')
+//    background-size: 78px
 #congratulation
   position: relative
   margin-top: 135px
   //start pos(hidden)
   //margin-left: 863px
   // visible pos
-  margin-left: 82px
+  //show-position
+  //margin-left: 10px
+  margin-left: 1000px
   h2
     font-weight: normal
     color: #FFC612
+
   .ufo
     position: absolute
-    top: 40px
+    top: 42px
     width: 175px
     height: 228px
     background-size: 176px
+    z-index: 10
+    // norm
+    //right: 639px
+    //right: -250px
     &.ufo1
       background: image-url('funny/ufo1.png')
       background-size: 178px
     &.ufo2
       background: image-url('funny/ufo2.png')
       background-size: 178px
+
   .block
     position: absolute
     padding: 20px
-    left: 194px
+    //top: 128px
+    // norm
+    //left: 141px
+    left: 141px
     width: 460px
     height: 260px
     border-radius: 20px
     border: 4px solid #27C234
     //24B630
     background: white
-    //-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    //-o-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    //-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    //box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    -webkit-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
-    -o-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
-    -moz-box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
-    box-shadow: 4px 7px 13px 0px  rgba(50, 50, 50, 0.75)
+    -webkit-box-shadow: 4px 7px 13px 0px rgba(50, 50, 50, 0.75)
+    -o-box-shadow: 4px 7px 13px 0px rgba(50, 50, 50, 0.75)
+    -moz-box-shadow: 4px 7px 13px 0px rgba(50, 50, 50, 0.75)
+    box-shadow: 4px 7px 13px 0px rgba(50, 50, 50, 0.75)
+    h2
+      font-weight: normal
+      color: #FFC612
+
   p.congrat
     margin-top: 25px
     font-size: 16px
+
   span.count
     font-size: 16px
 
+  //.row-fluid
+  //  margin-top: -65px
+  a
+    color: #23AD2F
   .icon
     width: 77px
     height: 86px
     margin: 0 auto
-    margin-top: 44px
+    //margin-top: 30px
+
+    margin-top: 17px
+    margin-bottom: 9px
+
+    //margin-top: 17px
+
     &.bronze
       background: image-url('funny/bronze.png')
       background-size: 78px
+    &.silver
+      background: image-url('funny/silver.png')
+      background-size: 78px
+    &.gold
+      background: image-url('funny/gold.png')
+      background-size: 78px
+
+
+$i: 1
+$max: 8
+$start: 176
+
+@while $i <= $max
+  $start: $start + 50
+  .square.sq#{$i}
+    left: #{$start}px
+  $i: $i + 1

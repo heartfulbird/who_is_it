@@ -23,6 +23,35 @@ var status1 = 'Знаток',
     status2 = 'Маста',
     status3 = 'Гуру';
 
+//noconsole = true;
+
+if (noconsole) {
+  window.console.log = function (txt) {
+  }
+}
+
+//else {
+//  if (window.hasOwnProperty('console')) {
+//
+//    if (window.console.hasOwnProperty('log')) {
+//
+//      window.console.log = function (text) {
+//        console.log(text);
+//      }
+//    } else {
+//      window.console.log = function (text) {
+//        alert(text);
+//      }
+//    }
+//
+//  } else {
+//    window.console = {}
+//    window.console.log = function (text) {
+//      alert(text);
+//    }
+//  }
+//}
+
 function rotateH () {
 
   var left = (oneLeft - offsetH).toString() + 'px';
@@ -218,18 +247,20 @@ function hidePreloader() {
 }
 
 function bigger(i) {
-  var status = $('.s'+ i +' .status');
-
-
-  status.addClass('bigger');
-
-  setTimeout(function () {
-    status.removeClass('bigger');
-
-  }, 1500)
+//  var status = $('.s'+ i +' .status');
+//
+//
+//  status.addClass('bigger');
+//
+//  setTimeout(function () {
+//    status.removeClass('bigger');
+//
+//  }, 1500)
 }
 
 function statusPage(i) {
+
+  console.log('status:' + i);
 
   // Показываем один текущий статус
 
@@ -237,7 +268,7 @@ function statusPage(i) {
 
     for (var z = 1; z <= 3; z++) {
 
-      if (z == i) {
+      if (z <= i) {
         $('.s' + z).show();
         bigger(z);
       } else {
@@ -251,6 +282,145 @@ function statusPage(i) {
 
 }
 
+// UFO ANIMATION
+// нло выезжает вмечте с поздравлением(повернутое влево)
+// останавливается (поверачиваем вправо)
+// совершает колебательные движения вверх-вниз
+// уезжает вправо и утягивает поздравление
+
+
+//function stopSwim() {
+//  clearInterval(temp_anime);
+//}
+//
+//function ufoFade(ufo) {
+//  console.log('ufoFade');
+//
+//  ufo.animate({'right': '-250px'}, 1500);
+//  setTimeout( function () {
+//    $('.block').animate({'left': '1229px'}, 1500);
+//  }, 1000)
+//
+//}
+//
+//function ufoUpDown (ufo) {
+//
+//  ufo.animate({'top': '155px'}, 500)
+//  setTimeout(function () {
+//    ufo.animate({'top': '165px'}, 500);
+//  }, 500);
+//
+//}
+//
+//
+//function ufoSwimInAir(ufo) {
+//  temp_anime = setInterval(
+//        function () {
+//          ufoUpDown(ufo);
+//        }
+//      , 1100);
+//
+//  setTimeout( function () {
+//    stopSwim();
+//    ufoFade(ufo);
+//  } ,6000)
+//
+//}
+//
+//function ufoShow() {
+//  console.log('ufoShow');
+////  $('#congratulation').animate({'margin-left': '-39px'}, 1000);
+//
+//  var ufo = $('.ufo');
+//
+//  ufo.animate({'right': '639px'}, 1500);
+//  $('.block').animate({'left': '171px'}, 1500);
+//
+//  ufoSwimInAir(ufo);
+//
+//}
+
+
+function stopSwim() {
+  clearInterval(temp_anime);
+}
+
+function ufoFade(ufo) {
+  console.log('ufoFade');
+
+  ufo.animate({'margin-left': '-1000px'}, 1500);
+  setTimeout(function () {
+    ufo.hide();
+    ufo
+        .css({'margin-left': '1000px'})
+        .show();
+
+    statusPage(User.props['status_' + catG]);
+  }, 1900);
+
+  // Показать следующую фотку
+    setTimeout(function () {
+      nextFoto();
+    }, 1000);
+
+}
+
+function ufoUpDown(ufo) {
+
+  ufo.animate({'margin-top': '130px'}, 500)
+  setTimeout(function () {
+    ufo.animate({'margin-top': '140px'}, 500);
+  }, 500);
+
+}
+
+
+function ufoSwimInAir(ufo) {
+//  temp_anime = setInterval(
+//      function () {
+//        ufoUpDown(ufo);
+//      }
+//      , 1100);
+
+//  setTimeout(function () {
+//    ufoFade(ufo);
+//  }, 6000)
+
+}
+
+function ufoShow() {
+  console.log('ufoShow');
+  var ufo = $('#congratulation');
+
+  ufo.animate({'margin-left': '10px'}, 1000);
+
+
+
+  ufoSwimInAir(ufo);
+
+}
+
+
+//
+
+function ufoCongratulation () {
+
+  ufoShow();
+
+
+//  $('.modal').hide();
+//  $('#congrat').show();
+//
+//  $('#congrat').modal();
+//
+//  $('#congrat').on('hidden.bs.modal', function (e) {
+//    statusPage(i)
+//  });
+
+
+}
+
+
 function congratulations(i) {
 
   var cat = { hot: '100 Самых актуальных артистов мира в танцевальной музыке', dance: '100 самых известн ых артистов в стиле Dance', world: '100 самых известных артистов мира' }
@@ -260,29 +430,54 @@ function congratulations(i) {
     $('.square').css('top', '-160px');
     setTimeout(animateDown(), 1000);
     console.log('на 30 нужна прикольная морда выезж-я сбоку экрана с фразой неплохо!')
+
+    // Показать следующую фотку
+    setTimeout(function () {
+      nextFoto();
+    }, 1000);
+  }
+  var cat_name;
+
+  if (catG == 'hot') {
+    cat_name = 'Hottt'
   }
 
+  if (catG == 'dance') {
+    cat_name = 'Dance'
+  }
+  if (catG == 'world') {
+    cat_name = 'World'
+  }
+
+  var container = $('#congratulation');
+  var text_ = container.find('.congrat');
+  var icon = container.find('.icon');
+
   if (i == 1) {
-    $('#congrat .congrat').text('Поздравляем! Вы угадали 50 артистов. Это уже уровень! Ваш статус "Знаток".');
+//    $('#congrat .congrat').text('Поздравляем! Вы угадали 50 артистов. Это уже уровень! Ваш статус "Знаток".');
+
+    text_.html('У вас<span class="bold count">&nbsp;50</span>&nbsp;очков и Вы зарабатываете статус<span class="status_name">&nbsp;Bronze</span>&nbsp;в категории<span class="cat_name lobster">&nbsp;' + cat_name + '!</span>');
+    icon.attr('class', 'icon bronze')
   }
 
   if (i == 2) {
-    $('#congrat .congrat').text('Отличный результат! Теперь ваш статус "МАСТА".');
+//    $('#congrat .congrat').text('Отличный результат! Теперь ваш статус "МАСТА".');
+    text_.html('Отличный результат! У вас<span class="bold count">&nbsp;70</span>&nbsp;очков. Теперь у Вас статус<span class="status_name">&nbsp;Silver</span>&nbsp;в категории<span class="cat_name lobster">&nbsp;' + cat_name + '!</span>');
+    icon.attr('class', 'icon silver')
   }
 
   if (i == 3) {
-    $('#congrat .congrat').text('О да! 100 из 100. Вы абсолютный Гуру в категории "'+ cat[catG] + '".');
+//    $('#congrat .congrat').text('О да! 100 из 100. Вы абсолютный Гуру в категории "'+ cat[catG] + '".');
+    text_.html('О да! <span class="bold count">&nbsp;100 из 100!</span> Вы абсолютный Гуру! Теперь у Вас статус<span class="status_name">&nbsp;Gold</span>&nbsp;в категории<span class="cat_name lobster">&nbsp;' + cat_name + '!</span>');
+    icon.attr('class', 'icon gold')
   }
 
 
-  $('.modal').hide();
-  $('#congrat').show();
+  if (i > 0) {
+    ufoCongratulation();
+  }
 
-  $('#congrat').modal();
 
-  $('#congrat').on('hidden.bs.modal', function (e) {
-    statusPage(i)
-  });
 }
 
 
@@ -343,6 +538,7 @@ function updatePageCounter(counter) {
 
 function success () {
 
+  console.log('SUCCESS')
   // увеличить счетчик угаданных в переменной и на  странице
   User.count = parseInt(User.count) + 1;
 
@@ -373,17 +569,17 @@ function success () {
 
 
 
-  if (User.count == 100) {
+  if (User.props['count_' + catG] == 100) {
     // Здесь надо поздравить и дать варианты дествий:
     // поделиться, пройтись еще раз с новыми фотками... и тд. посмотреть общий рейтинг. Рейтинг может быть тоже разный кто больше всех угадал кто быстрее всех продвигается и тп TODO
     console.log('100 из 100! Поздравляем! Вы Гуру! Можете подклиться с друзьями своим результатом. Можно начать сначала, фото будут меняться. Попробуем?')
 
   } else {
 
-    // Показать следующую фотку
-    setTimeout(function () {
-      nextFoto();
-    }, 1000);
+//    // Показать следующую фотку
+//    setTimeout(function () {
+//      nextFoto();
+//    }, 1000);
 
   }
 
@@ -482,7 +678,12 @@ function groupsInfo(cat) {
   $('#category .lobster').text(cat_txt);
 
   $('.modal').modal('hide');
-  setInterval($('.modal').hide(), 400);
+//  setInterval($('.modal').hide(), 400);
+  setTimeout(function () {
+    if ($('.modal:visible').length > 0) {
+      $('.modal').hide();
+    }
+  }, 1000);
 }
 
 
@@ -534,12 +735,20 @@ function initEvents() {
     $('#change_category').modal();
   });
 
+  $('.next_foto').on('click', function () {
+    ufoFade($('#congratulation'));
+  });
+
 
   $('body').on('click', function () {
 // Анимация
 //    $('.square').css('top', '-160px');
 //    setTimeout(animateDown(), 1000);
 
+
+  //ufoShow test
+//    ufoShow();
+//
   });
 
   // END События
