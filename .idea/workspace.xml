@@ -45,7 +45,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389297521709" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395264984335" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395265135935" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -90,7 +90,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="778" column="27" selection-start="15116" selection-end="15116" vertical-scroll-proportion="0.17489712">
+            <state line="778" column="71" selection-start="15160" selection-end="15160" vertical-scroll-proportion="0.17489712">
               <folding />
             </state>
           </provider>
@@ -772,7 +772,11 @@
       <created>1395264988225</created>
       <updated>1395264988225</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="test vk post__ photo, link_">
+      <created>1395265138466</created>
+      <updated>1395265138466</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -994,7 +998,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="778" column="27" selection-start="15116" selection-end="15116" vertical-scroll-proportion="0.17489712">
+        <state line="778" column="71" selection-start="15160" selection-end="15160" vertical-scroll-proportion="0.17489712">
           <folding />
         </state>
       </provider>

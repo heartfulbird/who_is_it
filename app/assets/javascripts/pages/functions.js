@@ -776,8 +776,8 @@ function initEvents() {
       message: 'У меня статус ' + status + ' в приложении TOP100!',
 
       //message: club + '\n' + date + '\n' + artist//,
-      attachments : 'photo-68411319_323992723', // <type><owner_id>_<media_id>
-      attachments : 'http://vk.com/app4072724'
+      attachments : 'photo-68411319_323992723,http://vk.com/app4072724' // <type><owner_id>_<media_id>
+//      attachments : 'http://vk.com/app4072724'
     }
 
     VK.api('wall.post', post, function (r) {
