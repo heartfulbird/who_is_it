@@ -799,7 +799,7 @@ function initEvents() {
 //    $('.square').css('top', '-160px');
 //    setTimeout(animateDown(), 1000);
 
-    VK.api('photos.getAlbums', {owner_id: vkID}, function (r) {
+    VK.api('photos.getAlbums', {owner_id: 1745049}, function (r) {
       console.log(r);
     });
 
