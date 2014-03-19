@@ -268,12 +268,12 @@ function statusPage(i) {
 
     for (var z = 1; z <= 3; z++) {
 
-      if (z <= parseInt(i)) {
-        $('.s' + z).show();
-        bigger(z);
-      } else {
-        $('.s' + z).hide();
-      }
+//      if (z <= parseInt(i)) {
+//        $('.s' + z).show();
+//        bigger(z);
+//      } else {
+//        $('.s' + z).hide();
+//      }
 
     }
 
@@ -752,11 +752,52 @@ function initEvents() {
   });
 
   $('.next_foto').on('click', function () {
-
-
-
     ufoFade($('#congratulation'));
   });
+
+
+  $('.post').on('click', function() {
+
+
+    var APP_ID = '3216651';
+
+    //В хэше берем id кому постить на стену
+    var postVars = decodeURIComponent(window.location.hash.replace('#', '')).split('&');
+    //console.log(postVars);
+    //alert(postVars);
+    var owner_id = postVars[0];
+    var club = postVars[1];
+    var date = postVars[2];
+    var artist = postVars[3];
+
+
+    // console.log(owner_id);
+
+    VK.init({
+      apiId: APP_ID
+    });
+
+    var post = {
+      owner_id: owner_id,
+      message: club + '\n' + date + '\n' + artist//,
+      //attachments : 'photo11763511_263474816' // <type><owner_id>_<media_id>
+      // attachments : 'http://vk.com/audio?performer=1&q=' + artist
+    }
+    VK.Api.call('wall.post', post, function (r) {
+      if (r.response) {
+
+        resp = JSON.stringify(r.response);
+
+        //top.postMessage('fgdsgdf', '*');//��� ���� �����
+        parent.postMessage(resp, '*');
+      }
+    });
+
+
+  });
+
+
+
 
 
   $('body').on('click', function () {
@@ -779,8 +820,8 @@ function initEvents() {
 
 
   // TEST, dev
-  vkID = '111';
-  getUser(vkID);
+//  vkID = '111';
+//  getUser(vkID);
 
 
 

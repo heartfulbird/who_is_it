@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72366523-0e57-41b5-ae3c-a2d843b6468c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/bronze.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/cloud2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/face_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/gold.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/silver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/ufo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/ufo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/funny/ufo3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.slim" afterPath="$PROJECT_DIR$/app/views/welcome/index.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -35,7 +23,7 @@
     <file path="/get_data.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387213295346" ignored="false" />
     <file path="/get_data.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387213422271" ignored="false" />
     <file path="/index.json.jbuilder" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389214004273" ignored="false" />
-    <file path="/a.dummy" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395236208324" ignored="false" />
+    <file path="/a.dummy" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395254343929" ignored="false" />
     <file path="/application.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387220596513" ignored="false" />
     <file path="/database.yml" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387224866249" ignored="false" />
     <file path="/20131216201731_create_users.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387225699926" ignored="false" />
@@ -44,8 +32,8 @@
     <file path="/user.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387233019832" ignored="false" />
     <file path="/20131216224614_add_index_to_id_vk.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387234016460" ignored="false" />
     <file path="/application.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390070094756" ignored="false" />
-    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395247189828" ignored="false" />
-    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389728317813" ignored="false" />
+    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395253843573" ignored="false" />
+    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395251689489" ignored="false" />
     <file path="/a.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388607264722" ignored="false" />
     <file path="/periodical.rake" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389208589507" ignored="false" />
     <file path="/schedule.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389005690688" ignored="false" />
@@ -57,7 +45,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389297521709" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395220910271" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395253593757" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -84,25 +72,43 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="12" selection-start="4094" selection-end="4094" vertical-scroll-proportion="-3.367347">
+            <state line="157" column="12" selection-start="4094" selection-end="4094" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1143" selection-end="1207" vertical-scroll-proportion="0.33275864">
+            <state line="168" column="9" selection-start="2512" selection-end="2512" vertical-scroll-proportion="60.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="362" column="17" selection-start="7087" selection-end="7087" vertical-scroll-proportion="-11.76">
+            <state line="822" column="13" selection-start="15876" selection-end="15899" vertical-scroll-proportion="0.8053333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="periodical.rake" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="56" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,10 +135,8 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="9" selection-start="5483" selection-end="5483" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="231" column="12" selection-start="5548" selection-end="5554" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,14 +167,14 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/mixins.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/animation.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
       </list>
     </option>
   </component>
@@ -265,6 +269,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -406,18 +411,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../volunteers/app/views/organization_profile/edit.html.slim" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.36177886" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="slim" />
+    <property name="options.splitter.details.proportions" value="0.36177886" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -537,6 +541,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -570,13 +581,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -748,7 +752,15 @@
       <created>1390337254993</created>
       <updated>1390337254993</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="congratulation animations">
+      <created>1395247513682</created>
+      <updated>1395247513682</updated>
+    </task>
+    <task id="LOCAL-00011" summary="clear list if == 100">
+      <created>1395253570320</created>
+      <updated>1395253570320</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -757,15 +769,15 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.026234567" sideWeight="0.7909091" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29012346" sideWeight="0.7909091" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21818182" sideWeight="0.97376543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2219697" sideWeight="0.70987654" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.026234567" sideWeight="0.2090909" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29012346" sideWeight="0.2090909" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.020061728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -817,7 +829,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="congratulations" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear list if == 100" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -841,6 +853,8 @@
     <MESSAGE value="animation for cool!" />
     <MESSAGE value="choose category" />
     <MESSAGE value="congratulations" />
+    <MESSAGE value="congratulation animations" />
+    <MESSAGE value="clear list if == 100" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,11 +868,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="9" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" />
@@ -879,13 +888,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="-0.45576924">
           <folding />
         </state>
       </provider>
@@ -925,15 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="9" selection-start="5483" selection-end="5483" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/global.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="2" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
@@ -941,23 +934,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="17" selection-start="7087" selection-end="7087" vertical-scroll-proportion="-11.76">
+        <state line="157" column="12" selection-start="4094" selection-end="4094" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="12" selection-start="4094" selection-end="4094" vertical-scroll-proportion="-3.367347">
+        <state line="231" column="12" selection-start="5548" selection-end="5554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="56" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1143" selection-end="1207" vertical-scroll-proportion="0.33275864">
+        <state line="168" column="9" selection-start="2512" selection-end="2512" vertical-scroll-proportion="60.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/periodical.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="822" column="13" selection-start="15876" selection-end="15899" vertical-scroll-proportion="0.8053333">
           <folding />
         </state>
       </provider>
