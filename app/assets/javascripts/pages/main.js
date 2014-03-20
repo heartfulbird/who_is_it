@@ -21,9 +21,10 @@
  */
 // ?start = ... - свежесть групп
 var apiUrl = {
-  hot: 'http://developer.echonest.com/api/v4/artist/top_hottt?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&results=100&start=0&bucket=images&callback=?',
-  dance: 'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&genre=pop&bucket=images&callback=?',
-  world: 'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&bucket=images&callback=?'
+  hot:       'http://developer.echonest.com/api/v4/artist/top_hottt?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&results=100&start=0&bucket=images&callback=?',
+  dance:     'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&genre=pop&bucket=images&callback=?',
+  world:     'http://developer.echonest.com/api/v4/artist/search?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&sort=familiarity-desc&results=100&bucket=images&callback=?',
+  video_hot: 'http://developer.echonest.com/api/v4/artist/top_hottt?api_key=EK9JVX6IBJB4ZDEJ3&format=jsonp&start=0&results=100&bucket=video&callback=?'
 }
 var phoneH = 339;
 var phoneW = 192;
@@ -57,6 +58,9 @@ var orientFoto;
 
 var errorGroups = 0;
 var iLoad = 0;
+window.videoTube = {};
+
+
 /*
  * Основные ф-ии
  */
@@ -416,6 +420,59 @@ function getGroupsApi(cat) {
     });
 }
 
+
+function pasteVideo (artist_id) {
+
+  var artists = window.videoTube[catG].artists;
+
+  for (var i in artists) {
+    if (artists[i].id == artist_id) {
+      console.log(artists[i].video[0].url);
+
+      var v = artists[i].video[0].url.split('=')[1].split('&')[0];
+
+      $('.video').html('<iframe src="http://www.youtube.com/embed/' + v + '" type="text/html" width="400" height="300" frameborder="0"></iframe>')
+    }
+  }
+
+}
+
+var videoCallBack = function (data) {
+
+  console.log(data);
+  var response = data.response;
+
+  // записи video групп полученных по Апи в кэш
+  console.log('записать в кэш video из Апи');
+
+  if (response.hasOwnProperty('status') && response.status.message == 'Success') {
+
+    updateCache('video_' + catG, response);
+
+    window.videoTube[catG] = response;
+
+    // и отдать их в работу
+//    groupstoglobal(response);
+
+  } else {
+    console.log('api video error');
+    console.log(data.status.message);
+  }
+}
+
+function getVideoApi() {
+  $.ajax({
+    url: apiUrl['video_' + catG],
+    dataType: 'jsonp',
+    jsonpCallback: 'videoCallBack ',
+    jsonp: 'jsonp'
+  });
+}
+
+//function getVideoCache () {
+//}
+// Есть
+//getCacheAndWriteInGlobal
 
 
 

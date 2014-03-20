@@ -24,6 +24,23 @@ function justRead (key) {
 
 }
 
+function getCacheAndWriteInGlobal (key, var_name) {
+
+  $.ajax({
+    url: '/only_read' + '/' + key,
+    type: 'get',
+    success: function (data) {
+
+      window[var_name][catG]= data;
+
+      console.log('CACHE: ');
+      console.log(data);
+
+    }
+  });
+
+}
+
 
 function enterUsers(vk_id) {
 
