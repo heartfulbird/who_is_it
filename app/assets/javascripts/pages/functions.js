@@ -794,26 +794,27 @@ function doVideoList () {
 
 
 function windowModify () {
-  var h = $('#video_page').height();
-
-  $('.fix_iframe_container').height(h+100)
-
-  VK.callMethod("resizeWindow", 800, h + 100);
-
-
-//  $('.fix_iframe_container').css('overflow-y', 'hidden');
+  setTimeout(function () {
+        var h = $('#video_page').height();
+        $('.fix_iframe_container').height(h + 100);
+        VK.callMethod("resizeWindow", 800, h + 100);
+  }, 1200);
+  //  setTimeout(function () {
+//    $('.fix_iframe_container').css('overflow-y', 'auto');
+//  },
 
 }
 
 
 function windowDefault() {
-//  setTimeout(function () {
-//    $('.fix_iframe_container').css('overflow-y', 'auto');
-//  }, 1000);
 
-  $('.fix_iframe_container').height(580)
+  setTimeout(function () {
+    $('.fix_iframe_container').height(580);
+    VK.callMethod("resizeWindow", 800, 600);
+  } , 1200);
 
-  VK.callMethod("resizeWindow", 800, 600);
+
+//  $('.fix_iframe_container').css('overflow-y', 'hidden');
 }
 
 
@@ -845,7 +846,8 @@ function initEvents() {
   $('.close_it').on('click', function () {
     $('#video_page').hide(1000);
 
-    windowModify();
+    windowDefault();;
+
 
     $('.boxes').show(1000);
   });
@@ -905,15 +907,6 @@ function initEvents() {
 
 
   $('#watch_unknown').on('click', function () {
-    //    Я жму на кнопку для видео
-    //   беру видео этой категории
-    //    появляется список так:
-    //    - я беру лист угаданных и все группы в текущей категории
-    //    - прохожу по всем этим группам и добавляю если этой группы нет в угаданных
-    //    - в объект artistsVideo пишу по id артиста - его имя и все его видео
-    //    - вывожу список всех артистов по именам
-    //    - при нажатии на имени артиста под ним в .video вставляю один из его роликов
-    // структура - обертка: имя артиста , .video
 
     if (typeof(videoTube[catG]) == 'undefined') {
       getCacheAndWriteInGlobal('video_' + catG, 'videoTube')
@@ -922,7 +915,7 @@ function initEvents() {
     }
 
     $('.boxes').hide(1000);
-
+    windowModify();
 
   });
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72366523-0e57-41b5-ae3c-a2d843b6468c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -32,8 +34,8 @@
     <file path="/user.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387233019832" ignored="false" />
     <file path="/20131216224614_add_index_to_id_vk.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387234016460" ignored="false" />
     <file path="/application.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390070094756" ignored="false" />
-    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395347150493" ignored="false" />
-    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395339855987" ignored="false" />
+    <file path="/functions.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395348119488" ignored="false" />
+    <file path="/main.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395348386159" ignored="false" />
     <file path="/a.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388607264722" ignored="false" />
     <file path="/periodical.rake" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389208589507" ignored="false" />
     <file path="/schedule.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389005690688" ignored="false" />
@@ -45,7 +47,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389297521709" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395346834225" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395347307769" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -90,27 +92,27 @@
       <file leaf-file-name="app.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="459" column="19" selection-start="8191" selection-end="8191" vertical-scroll-proportion="0.0">
+            <state line="491" column="0" selection-start="8692" selection-end="8704" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="798" column="6" selection-start="17540" selection-end="17540" vertical-scroll-proportion="0.054446463">
+            <state line="779" column="70" selection-start="17146" selection-end="17156" vertical-scroll-proportion="-11.52">
               <folding>
-                <element signature="e#19210#19471#0" expanded="false" />
+                <element signature="e#19310#19571#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="433" column="23" selection-start="9656" selection-end="9661" vertical-scroll-proportion="-12.72">
+            <state line="497" column="17" selection-start="11111" selection-end="11111" vertical-scroll-proportion="0.8493648">
               <folding />
             </state>
           </provider>
@@ -163,11 +165,11 @@
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/cache.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
       </list>
     </option>
   </component>
@@ -859,7 +861,11 @@
       <created>1395346836368</created>
       <updated>1395346836368</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="video icons">
+      <created>1395347317652</created>
+      <updated>1395347317652</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1064,13 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="433" column="23" selection-start="9656" selection-end="9661" vertical-scroll-proportion="-12.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/amelia.html.slim">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="23" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-10.041667">
@@ -1080,17 +1079,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="459" column="19" selection-start="8191" selection-end="8191" vertical-scroll-proportion="0.0">
+        <state line="491" column="0" selection-start="8692" selection-end="8704" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="798" column="6" selection-start="17540" selection-end="17540" vertical-scroll-proportion="0.054446463">
+        <state line="779" column="70" selection-start="17146" selection-end="17156" vertical-scroll-proportion="-11.52">
           <folding>
-            <element signature="e#19210#19471#0" expanded="false" />
+            <element signature="e#19310#19571#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="497" column="17" selection-start="11111" selection-end="11111" vertical-scroll-proportion="0.8493648">
+          <folding />
         </state>
       </provider>
     </entry>

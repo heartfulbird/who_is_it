@@ -494,6 +494,8 @@ function pasteVideo (this_) {
     }
 
   }
+
+  windowModify();
 }
 
 var videoCallBack = function (data) {
