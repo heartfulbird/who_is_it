@@ -793,6 +793,32 @@ function doVideoList () {
 }
 
 
+function windowModify () {
+  var h = $('#video_page').height();
+
+  $('.fix_iframe_container').height(h+100)
+
+  VK.callMethod("resizeWindow", 800, h + 100);
+
+
+//  $('.fix_iframe_container').css('overflow-y', 'hidden');
+
+}
+
+
+function windowDefault() {
+//  setTimeout(function () {
+//    $('.fix_iframe_container').css('overflow-y', 'auto');
+//  }, 1000);
+
+  $('.fix_iframe_container').height(580)
+
+  VK.callMethod("resizeWindow", 800, 600);
+}
+
+
+
+
 function initEvents() {
 
   /*
@@ -818,7 +844,9 @@ function initEvents() {
 
   $('.close_it').on('click', function () {
     $('#video_page').hide(1000);
-    $('.fix_iframe_container').css('overflow-y', 'hidden');
+
+    windowModify();
+
     $('.boxes').show(1000);
   });
 
@@ -894,9 +922,7 @@ function initEvents() {
     }
 
     $('.boxes').hide(1000);
-    setTimeout(function () {
-      $('.fix_iframe_container').css('overflow-y', 'auto');
-    } ,1000);
+
 
   });
 
