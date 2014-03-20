@@ -846,7 +846,10 @@ function initEvents() {
   $('.close_it').on('click', function () {
     $('#video_page').hide(1000);
 
-    windowDefault();;
+    windowDefault();
+    setTimeout(function () {
+      windowDefault();
+    }, 1300);
 
 
     $('.boxes').show(1000);
@@ -916,6 +919,9 @@ function initEvents() {
 
     $('.boxes').hide(1000);
     windowModify();
+    setTimeout(function () {
+      windowModify();
+    }, 1300);
 
   });
 
