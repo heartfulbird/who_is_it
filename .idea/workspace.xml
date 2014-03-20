@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72366523-0e57-41b5-ae3c-a2d843b6468c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.slim" afterPath="$PROJECT_DIR$/app/views/welcome/index.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -18,10 +12,10 @@
     <file path="/index.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387205698128" ignored="false" />
     <file path="/application_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389726681147" ignored="false" />
     <file path="/index.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395341521644" ignored="false" />
-    <file path="/amelia.html.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395340117032" ignored="false" />
+    <file path="/amelia.html.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395345238363" ignored="false" />
     <file path="/application.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387023466264" ignored="false" />
     <file path="/app.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387024403863" ignored="false" />
-    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395344394248" ignored="false" />
+    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395345265532" ignored="false" />
     <file path="/development.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388942000522" ignored="false" />
     <file path="/mycache_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389731410023" ignored="false" />
     <file path="/routes.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389731621547" ignored="false" />
@@ -51,7 +45,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389297521709" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395324624664" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395345066895" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -78,7 +72,7 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="16" selection-start="1954" selection-end="1961" vertical-scroll-proportion="-4.1836734">
+            <state line="91" column="16" selection-start="1954" selection-end="1961" vertical-scroll-proportion="23.367348">
               <folding />
             </state>
           </provider>
@@ -87,7 +81,7 @@
       <file leaf-file-name="amelia.html.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/amelia.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="-10.041667">
+            <state line="70" column="23" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-10.041667">
               <folding />
             </state>
           </provider>
@@ -96,7 +90,7 @@
       <file leaf-file-name="app.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="456" column="14" selection-start="8155" selection-end="8155" vertical-scroll-proportion="-0.426146">
+            <state line="456" column="12" selection-start="8153" selection-end="8153" vertical-scroll-proportion="0.31239387">
               <folding />
             </state>
           </provider>
@@ -105,7 +99,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="824" column="45" selection-start="18104" selection-end="18104" vertical-scroll-proportion="-12.12">
+            <state line="818" column="11" selection-start="17894" selection-end="17899" vertical-scroll-proportion="0.76">
               <folding>
                 <element signature="e#18803#19064#0" expanded="false" />
               </folding>
@@ -116,7 +110,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="430" column="22" selection-start="9588" selection-end="9588" vertical-scroll-proportion="-10.92">
+            <state line="433" column="23" selection-start="9656" selection-end="9661" vertical-scroll-proportion="-12.72">
               <folding />
             </state>
           </provider>
@@ -170,9 +164,9 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/cache.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/main.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.slim" />
+        <option value="$PROJECT_DIR$/app/views/layouts/amelia.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
       </list>
     </option>
@@ -857,13 +851,18 @@
       <created>1395324563670</created>
       <updated>1395324563670</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="video icons">
+      <created>1395345073801</created>
+      <updated>1395345073801</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.7909091" order="1" side_tool="false" content_ui="tabs" />
@@ -878,7 +877,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -926,7 +924,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="video logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="video icons" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -940,7 +938,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="new categories, counters, the same list ok. status in base, toBase periodical, clear action. Worked!" />
     <MESSAGE value="new categories, counters, the same list ok. clear action. Worked!" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="ignore" />
@@ -965,6 +962,7 @@
     <MESSAGE value="video iframe" />
     <MESSAGE value="video iframe_" />
     <MESSAGE value="video logic" />
+    <MESSAGE value="video icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,39 +1053,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="16" selection-start="1954" selection-end="1961" vertical-scroll-proportion="23.367348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="430" column="22" selection-start="9588" selection-end="9588" vertical-scroll-proportion="-10.92">
+        <state line="433" column="23" selection-start="9656" selection-end="9661" vertical-scroll-proportion="-12.72">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="824" column="45" selection-start="18104" selection-end="18104" vertical-scroll-proportion="-12.12">
+        <state line="818" column="11" selection-start="17894" selection-end="17899" vertical-scroll-proportion="0.76">
           <folding>
             <element signature="e#18803#19064#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="16" selection-start="1954" selection-end="1961" vertical-scroll-proportion="-4.1836734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/amelia.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="-10.041667">
+        <state line="70" column="23" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-10.041667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="456" column="14" selection-start="8155" selection-end="8155" vertical-scroll-proportion="-0.426146">
+        <state line="456" column="12" selection-start="8153" selection-end="8153" vertical-scroll-proportion="0.31239387">
           <folding />
         </state>
       </provider>
