@@ -66,8 +66,11 @@ html lang="en"
 
           .fix_iframe_container
             = bootstrap_flash
-            = yield
-            /= render 'video'
+            #main_page
+              = yield :main_page
+            #video_page
+              .close_it.icon-remove
+              = yield :video_page
 
 
 

@@ -775,12 +775,20 @@ function doVideoList () {
 
   for (var p in unknownVideo) {
 
-    $('#video_page').append('<div class="unknown"><div class="name" data-id="' + p + '" onclick="pasteVideo(this)">' + unknownVideo[p].name + '</div><div class="video"></div></div>')
+    $('#video_page').append(
+        '<div class="unknown">' +
+            '<div class="name" data-id="' + p + '" onclick="pasteVideo(this)">' + unknownVideo[p].name + '</div>' +
+            '<div class="block">' +
+//              '<div class="listUp">listup</div>' +
+              '<div class="video_all"></div>' +
+              '<div class="video"></div>' +
+            '</div>' +
+         '</div>');
 
 
   }
 
-
+  $('#video_page').show(1000);
 
 }
 
@@ -798,7 +806,7 @@ function initEvents() {
     rotateV();
   });
 
-  $('#category').on('click', function () {
+  $('#category .lobster').on('click', function () {
     $('.modal').hide();
     $('#change_category').show();
     $('#change_category').modal();
@@ -807,6 +815,14 @@ function initEvents() {
   $('.next_foto').on('click', function () {
     ufoFade($('#congratulation'));
   });
+
+  $('.close_it').on('click', function () {
+    $('#video_page').hide(1000);
+    $('.fix_iframe_container').css('overflow-y', 'hidden');
+    $('.boxes').show(1000);
+  });
+
+  $('.tool_tip').tooltip({ placement: 'bottom' });
 
 
   $('.post').on('click', function() {
@@ -874,10 +890,14 @@ function initEvents() {
     if (typeof(videoTube[catG]) == 'undefined') {
       getCacheAndWriteInGlobal('video_' + catG, 'videoTube')
     } else {
-
       doVideoList();
-
     }
+
+    $('.boxes').hide(1000);
+    setTimeout(function () {
+      $('.fix_iframe_container').css('overflow-y', 'auto');
+    } ,1000);
+
   });
 
 

@@ -1,181 +1,182 @@
+= content_for :main_page do
+
+  /p = @orig
+  /p = @last
+  /p = @now
+  /
+  /p = @data
+
+  h1.logo.lobster Top100
+
+  #category
+    .lobster Hottt
+    /#watch_unknown.icon-eye-open.tool_tip data-original-title="Смотреть видео неугаданных групп"
 
 
-/p = @orig
-/p = @last
-/p = @now
-/
-/p = @data
-
-h1.logo.lobster Top100
-
-#category
-  .lobster Hottt
+  // Amelia Category Hottt, Dance, World
+  //h1.logo.lobster Hottt
 
 
-// Amelia Category Hottt, Dance, World
-//h1.logo.lobster Hottt
+  #preloader.hide
 
+  / TODO Сделать что надо с этими кнопками
+  #category_switch.hide
+    #hot onclick="groupsInfo('hot')" hot
+    #dance onclick="groupsInfo('dance')" dance
+    #world onclick="groupsInfo('world')" world
+  /end
 
-#preloader.hide
-
-/ TODO Сделать что надо с этими кнопками
-#category_switch.hide
-  #hot onclick="groupsInfo('hot')" hot
-  #dance onclick="groupsInfo('dance')" dance
-  #world onclick="groupsInfo('world')" world
-/end
-
-.status_wrap
-  .row-fluid
-    .s1.icon
-    .s2.icon
-    .s3.icon
-
-
-
-.phone onclick="nextFoto();"
-  .foto_wrap
-    .foto
-
-
-/.rotate_h Горизонтально
-/br
-/.rotate_v Вертикально
-/br
-/.next_foto onclick="nextFoto();" Next Foto
-
-= image_tag('1px.png', class: 'hide_foto', onerror: 'imgError();')
-
-
-.boxes
-  .span3#one
-    .btn.btn-primary#g1 onclick="approve(this);"
-    .btn.btn-success#g2 onclick="approve(this);"
-
-
-  .span3#two
-    .btn.btn-info#g3 onclick="approve(this);"
-    .btn.btn-warning#g4 onclick="approve(this);"
-
-
-  .span3#three
-    .btn.btn-primary#g5 onclick="approve(this);"
-    .btn.btn-success#g6 onclick="approve(this);"
-
-
-  .span3#four
-    .btn.btn-info#g7 onclick="approve(this);"
-    .btn.btn-warning#g8 onclick="approve(this);"
-
-
-
-#counter
-  p.text Угадано:
-  p.digit
-
-
-#result.hide result
-
-
-.modal.fade#change_category
-  div class="modal-dialog"
-    div class="modal-content"
-      /div class="modal-header"
-      /  button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
-      /  h4 class="modal-title" Выберите категорию Top100
-      div class="modal-body"
-
-        .span4 onclick="groupsInfo('hot')" Hottt
-        .span4 onclick="groupsInfo('dance')" Dance
-        .span4 onclick="groupsInfo('world')" World
-
-
-
-      /div class="modal-footer"
-        /button type="button" class="btn btn-default" data-dismiss="modal" Close
-        /button type="button" class="btn btn-primary" Save changes
-
-
-
-//.btn#error onclick="PasteNewPhoto ('http://jdj.jpg');" img script error, check
-.modal.fade#congrat
-  div class="modal-dialog"
-    div class="modal-content"
-      div class="modal-header"
-        button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
-        h4 class="modal-title" Результат
-      div class="modal-body"
-        p.congrat One fine body&hellip;
-      div class="modal-footer"
-        button type="button" class="btn btn-default" data-dismiss="modal" Close
-        button type="button" class="btn btn-primary" Save changes
-
-/p нлошка выезжает слева и вытягивает за собой поздравление
-/p когда поздравление на месте нлошка продолжает улетать влево за экран
-/p через ... сек слева таке выезжает другая нлошки иутягивает за собой поздравление обратно вправо
-/p если клик то это происходит по клику
-/p или нлошко мб оодна и таже только отраженная
-/p нлошки иногда появляются из за экрана просто так
-/p проплывают с деловым видом
-/p иногда при наведении на кнопку они выезжают и зависают на месте покачиваясь дожидаясь варианта ответа
-/p после ответа по быстрому уматывают
-/p при наведении на них тоже уматывают
-/p если ответ верный то они могут отреагировать - например при неудачном ответе замереть и медленно упасть вниз с поворотом на .. градусов
-/p а при верном ответе получить огонь внизу(гифка) и взлететь как ракета вверх
-/p когда нлошка покачивается у нее тень может уменьшаться - увеличиваться
-/p где то вначале игры нлшка может провокационно пролететь ни с того ни сего мимо
-#congratulation.text-center
-  .ufo.ufo1
-
-  .block.text-center
-    h2.lobster Поздравляем!
-
-    /p Вы заработали статус
-    /p У вас 50 очков и статус bronze
-    /p У вас 50 очков и бронзовый статус
-    p.congrat
-      | У Вас
-      span.bold.count &nbsp;50
-      | &nbsp;очков! Вы зарабатываете статус
-      span.status_name &nbsp;Bronze
-      | &nbsp;в категории
-      span.cat_name.lobster &nbsp;Hottt!
-
-    .icon.bronze
-
+  .status_wrap
     .row-fluid
-      /.span6 = link_to 'Поделиться', '#'
-      /.span6 = link_to 'Продолжить', '#'
-
-      /.span6.btn.btn-success  Поделиться
-      /.span6.btn.btn-success Продолжить
+      .s1.icon
+      .s2.icon
+      .s3.icon
 
 
-      .span1
-      .span4.btn.btn-success.post  Поделиться
-      .span2
-      .span4.btn.btn-success.next_foto Продолжить
-      .span1
+
+  .phone onclick="nextFoto();"
+    .foto_wrap
+      .foto
 
 
-.square.sq1
-  p С
-.square.sq2
-  p у
-.square.sq3
-  p п
-.square.sq4
-  p е
-.square.sq5
-  p р
-.square.sq6
-  p г
-.square.sq7
-  p у
-.square.sq8
-  p т
+  /.rotate_h Горизонтально
+  /br
+  /.rotate_v Вертикально
+  /br
+  /.next_foto onclick="nextFoto();" Next Foto
 
-= content_for 'video' do
-  #video_page
-    #watch_unknown Смотреть видео неугаданных групп
+  = image_tag('1px.png', class: 'hide_foto', onerror: 'imgError();')
+
+
+  .boxes
+    .span3#one
+      .btn.btn-primary#g1 onclick="approve(this);"
+      .btn.btn-success#g2 onclick="approve(this);"
+
+
+    .span3#two
+      .btn.btn-info#g3 onclick="approve(this);"
+      .btn.btn-warning#g4 onclick="approve(this);"
+
+
+    .span3#three
+      .btn.btn-primary#g5 onclick="approve(this);"
+      .btn.btn-success#g6 onclick="approve(this);"
+
+
+    .span3#four
+      .btn.btn-info#g7 onclick="approve(this);"
+      .btn.btn-warning#g8 onclick="approve(this);"
+
+
+
+  #counter
+    #watch_unknown.icon-eye-open.tool_tip data-original-title="Смотреть видео неугаданных групп"
+    p.text Угадано:
+    p.digit
+
+
+  #result.hide result
+
+
+  .modal.fade#change_category
+    div class="modal-dialog"
+      div class="modal-content"
+        /div class="modal-header"
+        /  button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
+        /  h4 class="modal-title" Выберите категорию Top100
+        div class="modal-body"
+
+          .span4.switch onclick="groupsInfo('hot')" Hottt
+          .span4.switch onclick="groupsInfo('dance')" Dance
+          .span4.switch onclick="groupsInfo('world')" World
+
+
+
+        /div class="modal-footer"
+          /button type="button" class="btn btn-default" data-dismiss="modal" Close
+          /button type="button" class="btn btn-primary" Save changes
+
+
+
+  //.btn#error onclick="PasteNewPhoto ('http://jdj.jpg');" img script error, check
+  .modal.fade#congrat
+    div class="modal-dialog"
+      div class="modal-content"
+        div class="modal-header"
+          button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
+          h4 class="modal-title" Результат
+        div class="modal-body"
+          p.congrat One fine body&hellip;
+        div class="modal-footer"
+          button type="button" class="btn btn-default" data-dismiss="modal" Close
+          button type="button" class="btn btn-primary" Save changes
+
+  /p нлошка выезжает слева и вытягивает за собой поздравление
+  /p когда поздравление на месте нлошка продолжает улетать влево за экран
+  /p через ... сек слева таке выезжает другая нлошки иутягивает за собой поздравление обратно вправо
+  /p если клик то это происходит по клику
+  /p или нлошко мб оодна и таже только отраженная
+  /p нлошки иногда появляются из за экрана просто так
+  /p проплывают с деловым видом
+  /p иногда при наведении на кнопку они выезжают и зависают на месте покачиваясь дожидаясь варианта ответа
+  /p после ответа по быстрому уматывают
+  /p при наведении на них тоже уматывают
+  /p если ответ верный то они могут отреагировать - например при неудачном ответе замереть и медленно упасть вниз с поворотом на .. градусов
+  /p а при верном ответе получить огонь внизу(гифка) и взлететь как ракета вверх
+  /p когда нлошка покачивается у нее тень может уменьшаться - увеличиваться
+  /p где то вначале игры нлшка может провокационно пролететь ни с того ни сего мимо
+  #congratulation.text-center
+    .ufo.ufo1
+
+    .block.text-center
+      h2.lobster Поздравляем!
+
+      /p Вы заработали статус
+      /p У вас 50 очков и статус bronze
+      /p У вас 50 очков и бронзовый статус
+      p.congrat
+        | У Вас
+        span.bold.count &nbsp;50
+        | &nbsp;очков! Вы зарабатываете статус
+        span.status_name &nbsp;Bronze
+        | &nbsp;в категории
+        span.cat_name.lobster &nbsp;Hottt!
+
+      .icon.bronze
+
+      .row-fluid
+        /.span6 = link_to 'Поделиться', '#'
+        /.span6 = link_to 'Продолжить', '#'
+
+        /.span6.btn.btn-success  Поделиться
+        /.span6.btn.btn-success Продолжить
+
+
+        .span1
+        .span4.btn.btn-success.post  Поделиться
+        .span2
+        .span4.btn.btn-success.next_foto Продолжить
+        .span1
+
+
+  .square.sq1
+    p С
+  .square.sq2
+    p у
+  .square.sq3
+    p п
+  .square.sq4
+    p е
+  .square.sq5
+    p р
+  .square.sq6
+    p г
+  .square.sq7
+    p у
+  .square.sq8
+    p т
+
+  /#watch_unknown Смотреть видео неугаданных групп
+
 

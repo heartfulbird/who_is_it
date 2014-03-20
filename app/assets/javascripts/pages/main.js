@@ -422,25 +422,78 @@ function getGroupsApi(cat) {
     });
 }
 
+function pastePlayer (this_) {
+
+  var el = $(this_);
+
+  var wrap = el.closest('.unknown');
+
+  wrap.find('.video_name').removeClass('open');
+  el.addClass('open');
+
+  var player = el.closest('.unknown').find('.video');
+
+  var v = el.data('v');
+  player.html('<iframe src="http://www.youtube.com/embed/' + v + '" type="text/html" width="400" height="300" frameborder="0"></iframe>')
+
+}
+
 
 function pasteVideo (this_) {
 
   var el = $(this_);
+  var wrap = el.closest('.unknown');
+  var block = wrap.find('.block');
+  var player = wrap.find('.video');
 
-  var artist_id = el.data('id')
+  if (el.hasClass('done')) {
 
-  var artists = window.videoTube[catG].artists;
-
-  for (var i in artists) {
-    if (artists[i].id == artist_id) {
-      console.log(artists[i].video[0].url);
-
-      var v = artists[i].video[0].url.split('=')[1].split('&')[0];
-
-      el.next('.video').html('<iframe src="http://www.youtube.com/embed/' + v + '" type="text/html" width="400" height="300" frameborder="0"></iframe>')
+    if (el.hasClass('open')) {
+      player.hide(300);
+      block.slideUp();
+      el.removeClass('open');
+    } else {
+      block.slideDown();
+      el.addClass('open');
+      player.show(300);
     }
-  }
 
+  } else {
+
+    var video_all = wrap.find('.video_all');
+    var artist_id = el.data('id');
+    var artists = window.videoTube[catG].artists;
+
+    for (var i in artists) {
+      if (artists[i].id == artist_id) {
+        console.log(artists[i].video[0].url);
+
+        var videos = artists[i].video;
+        var v_arr = [];
+
+
+        for (var c in videos) {
+          if (videos[c].url.indexOf('=') !== -1) {
+            v_arr.push(videos[c]);
+          }
+        }
+
+        for (var e in v_arr){
+          console.log(v_arr[e].url);
+
+          var v = v_arr[e].url.split('=')[1].split('&')[0];
+
+          video_all.append('<div class="video_name" data-v="'+ v +'" onclick="pastePlayer(this)"">' + v_arr[e].title + '</div>')
+        }
+
+        el.addClass('done')
+        block.slideDown();
+        el.addClass('open');
+
+      }
+    }
+
+  }
 }
 
 var videoCallBack = function (data) {

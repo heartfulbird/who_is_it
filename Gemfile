@@ -39,6 +39,7 @@ gem 'gon'
 gem 'activerecord-postgres-hstore'
 gem 'dalli'
 gem 'whenever', :require => false
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'pg'
