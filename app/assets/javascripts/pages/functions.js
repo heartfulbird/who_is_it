@@ -731,6 +731,59 @@ function getUser(vk_id) {
 
 }
 
+function doVideoList () {
+
+
+  var artists = Groups[catG].artists;
+
+  var unknown = [];
+
+  for (var i in artists) {
+
+    var artist_id = artists[i].id;
+
+    for (var z in listId) {
+
+      if (artist_id !== listId[z]) {
+        unknown.push(artist_id);
+      }
+
+    }
+
+  }
+
+//  console.log(unknown);
+
+  // unknown собраны
+
+  // теперь пройдем по всем артистам с видео  и у теx которые в нашем списке unknown возьмем видео
+
+  var artistsV = window.videoTube[catG].artists;
+
+  for (var x in artistsV) {
+    var artV = artistsV[x];
+
+    for (var n in unknown) {
+//      console.log(artV.id, unknown[n]+ '-------------------------------');
+
+      if (artV.id == unknown[n]) {
+        unknownVideo[artV.id] = { name: artV.name, video: artV.video }
+      }
+    }
+  }
+
+
+  for (var p in unknownVideo) {
+
+    $('#video_page').append('<div class="unknown"><div class="name" data-id="' + p + '" onclick="pasteVideo(this)">' + unknownVideo[p].name + '</div><div class="video"></div></div>')
+
+
+  }
+
+
+
+}
+
 
 function initEvents() {
 
@@ -788,25 +841,53 @@ function initEvents() {
 
 
 
-
+  // TEST'S
   $('body').on('click', function () {
-// Анимация
-//    $('.square').css('top', '-160px');
-//    setTimeout(animateDown(), 1000);
+    // Анимация
+    //    $('.square').css('top', '-160px');
+    //    setTimeout(animateDown(), 1000);
 
-//    VK.api('photos.getAlbums', {gid: 68411319}, function (r) {
-//      console.log(r);
-//    });
+    //    VK.api('photos.getAlbums', {gid: 68411319}, function (r) {
+    //      console.log(r);
+    //    });
 
 
-  //ufoShow test
-//    ufoShow();
+    //ufoShow test
+    // ufoShow();
 
   });
+  // end
+
+
+
+  $('#watch_unknown').on('click', function () {
+    //    Я жму на кнопку для видео
+    //   беру видео этой категории
+    //    появляется список так:
+    //    - я беру лист угаданных и все группы в текущей категории
+    //    - прохожу по всем этим группам и добавляю если этой группы нет в угаданных
+    //    - в объект artistsVideo пишу по id артиста - его имя и все его видео
+    //    - вывожу список всех артистов по именам
+    //    - при нажатии на имени артиста под ним в .video вставляю один из его роликов
+    // структура - обертка: имя артиста , .video
+
+    if (typeof(videoTube[catG]) == 'undefined') {
+      getCacheAndWriteInGlobal('video_' + catG, 'videoTube')
+    } else {
+
+      doVideoList();
+
+    }
+  });
+
+
 
   // END События
 
 
+
+
+  // --------------------- START APP ------------------------------
   // Получаем idVk - эта ф-ия перведет на getUser(vkID)
   getVkId();
 
@@ -817,12 +898,6 @@ function initEvents() {
     vkID = '111';
     getUser(vkID);
   }
-
-
-
-
-
-
 
 
 }

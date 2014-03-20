@@ -31,12 +31,19 @@ function getCacheAndWriteInGlobal (key, var_name) {
     type: 'get',
     success: function (data) {
 
-      window[var_name][catG]= data;
+      if (data == 0) {
+        console.log('vide cache empty for this category - get api');
+        getVideoApi();
+      } else {
+        window[var_name][catG] = data;
 
-      console.log('CACHE: ');
-      console.log(data);
+        console.log('CACHE: ');
+        console.log(data);
 
-    }
+        doVideoList();
+      }
+
+         }
   });
 
 }
