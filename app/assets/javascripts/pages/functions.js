@@ -260,22 +260,27 @@ function bigger(i) {
 
 function statusPage(i) {
 
-  console.log('status:' + i);
-
   // Показываем один текущий статус
 
   if (!isNaN(parseInt(i))) {
 
-    for (var z = 1; z <= 3; z++) {
+    if (parseInt(i) == 0) {
+      $('.status_wrap .icon').hide();
+      $('.new.icon').show();
+    } else {
 
-      if (z <= parseInt(i)) {
-        $('.s' + z).show();
-        bigger(z);
-      } else {
-        $('.s' + z).hide();
+      for (var z = 1; z <= 3; z++) {
+
+        if (z <= parseInt(i)) {
+          $('.s' + z).show();
+          bigger(z);
+        } else {
+          $('.s' + z).hide();
+        }
+
       }
-
     }
+
 
 
   }
@@ -394,9 +399,10 @@ function ufoSwimInAir(ufo) {
 
 }
 
-function ufoShow() {
-  console.log('ufoShow');
+function ufoShow(i) {
   var ufo = $('#congratulation');
+  var el = $('#congratulation').find('.ufo');
+  el.attr('class', 'ufo ufo'+i)
 
   ufo.animate({'margin-left': '10px'}, 1000);
 
@@ -409,9 +415,9 @@ function ufoShow() {
 
 //
 
-function ufoCongratulation () {
+function ufoCongratulation (i) {
 
-  ufoShow();
+  ufoShow(i);
 
 
 //  $('.modal').hide();
@@ -480,7 +486,7 @@ function congratulations(i) {
 //можете похвастаться что никто так как вы не знает всех самых актуальных артистов в категории...
 //у вас высший статус!
   if (i > 0) {
-    ufoCongratulation();
+    ufoCongratulation(i);
   }
 
 
