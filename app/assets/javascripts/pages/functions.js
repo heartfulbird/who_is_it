@@ -260,7 +260,7 @@ function bigger(i) {
 
 function statusPage(i) {
 
-  // Показываем один текущий статус
+  // Показываем все заработанные статусы
 
   if (!isNaN(parseInt(i))) {
 
@@ -932,7 +932,7 @@ function initEvents() {
     }
 
     $('.boxes').hide(1000);
-    windowModify();
+//    windowModify();
     setTimeout(function () {
       windowModify();
     }, 1300);
