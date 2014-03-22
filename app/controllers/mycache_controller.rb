@@ -51,7 +51,7 @@ class MycacheController < ApplicationController
 
   def clear_users
     if params[:key]
-      if params[:key] = 'all'
+      if params[:key] == 'all'
         @result = User.destroy_all
       else
         @result = User.find(params[:key]).destroy

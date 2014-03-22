@@ -537,6 +537,10 @@ function updatePageCounter(counter) {
 
   } ,1000)
 
+//  if (parseInt(counter)  > 0) {
+//    $('.icon-eye-open').show();
+//  }
+
 
 }
 
@@ -738,18 +742,19 @@ function doVideoList () {
 
   var unknown = [];
 
-  for (var i in artists) {
-
-    var artist_id = artists[i].id;
-
-    for (var z in listId) {
-
-      if (artist_id !== listId[z]) {
-        unknown.push(artist_id);
-      }
-
+  if (listId.length == 0) {
+    for (var x in artists) {
+      unknown.push(artists[x].id);
     }
-
+  } else {
+    for (var i in artists) {
+      var artist_id = artists[i].id;
+      for (var z in listId) {
+        if (artist_id !== listId[z]) {
+          unknown.push(artist_id);
+        }
+      }
+    }
   }
 
 //  console.log(unknown);
@@ -850,6 +855,9 @@ function initEvents() {
     setTimeout(function () {
       windowDefault();
     }, 1300);
+    setTimeout(function () {
+      windowDefault();
+    }, 2300);
 
 
     $('.boxes').show(1000);
@@ -922,6 +930,9 @@ function initEvents() {
     setTimeout(function () {
       windowModify();
     }, 1300);
+    setTimeout(function () {
+      windowModify();
+    }, 2300);
 
   });
 
