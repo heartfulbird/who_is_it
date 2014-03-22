@@ -268,7 +268,7 @@ function statusPage(i) {
       $('.status_wrap .icon').hide();
       $('.new.icon').show();
     } else {
-
+      $('.new.icon').hide();
       for (var z = 1; z <= 3; z++) {
 
         if (z <= parseInt(i)) {
