@@ -8,16 +8,18 @@
         tr
           th Участник
           th Всего угадано
-          th Статусы
+          /th Статусы
+
+
         - @users.each do |u|
           tr.user
             td
-              span.u_foto foto
-              span.u_fio name
+              span.u_foto = u[:props][:photo] if u[:props].present? && u[:props][:photo].present?
+              span.u_fio = image_tag(u[:props][:fio]) if u[:props].present? && u[:props][:fio].present?
             td
-              span.u_count = u.count
-            td
-              span.u_status медальки
+              span.u_count = u[:count]
+            /td
+            /  span.u_status медальки
 
 
 
