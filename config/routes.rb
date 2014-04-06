@@ -55,7 +55,8 @@ Template::Application.routes.draw do
   #   end
 
 
-  resources :welcome
+  resources :welcome, :rating
+
 
   get 'get_data/:key' => 'mycache#get_data'
   post 'write_data' => 'mycache#write_data',  method: :post

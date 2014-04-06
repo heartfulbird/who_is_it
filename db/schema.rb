@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216224614) do
+ActiveRecord::Schema.define(version: 20140406151653) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20131216224614) do
     t.hstore   "props"
   end
 
+  add_index "users", ["count"], name: "index_users_on_count", using: :btree
   add_index "users", ["id_vk"], name: "index_users_on_id_vk", using: :btree
 
 end

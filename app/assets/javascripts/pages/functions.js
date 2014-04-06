@@ -558,21 +558,6 @@ function success () {
   // увеличить счетчик угаданных в переменной и на  странице
   User.count = parseInt(User.count) + 1;
 
-  listId.push(TrueGroupId);
-
-  var catCount = parseInt(User.props['count_' + catG])  + 1;
-
-  User.props['count_'+catG] = catCount;
-
-  updatePageCounter(catCount);
-
-  if (catCount !== 30 && catCount !== 50 && catCount !== 70 && catCount !== 100) {
-    nextFoto();
-  } else {
-    checkStatus(catCount);
-  }
-
-
   if (User.props.list.length == 0) {
 
     User.props.list += TrueGroupId;
@@ -582,6 +567,24 @@ function success () {
     User.props.list += ',' + TrueGroupId;
 
   }
+
+  listId.push(TrueGroupId);
+
+  var catCount = parseInt(User.props['count_' + catG])  + 1;
+
+  User.props['count_'+catG] = catCount;
+
+  updatePageCounter(catCount);
+
+
+  if (catCount !== 30 && catCount !== 50 && catCount !== 70 && catCount !== 100) {
+    nextFoto();
+  } else {
+    checkStatus(catCount);
+  }
+
+
+
       //.push(TrueGroupId);
   setTimeout(function () {
     updateCache(User.id_vk, User);
@@ -956,9 +959,13 @@ function initEvents() {
 
 
   // TEST, dev
-  if (gon.env !== 'production') {
-    vkID = '111';
-    getUser(vkID);
+  if (typeof(gon) !== 'undefined') {
+    if (gon.env !== 'production') {
+      vkID = '111';
+      getUser(vkID);
+    }
+  } else {
+    console.log('gon не определен на этой странице');
   }
 
 
