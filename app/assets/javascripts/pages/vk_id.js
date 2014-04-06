@@ -26,7 +26,7 @@ function getVkId () {   // когда загрузится вся страниц
       } else {
 
           // фото
-          VK.api("users.get", {fields: "first_name, last_name, photo_medium"}, function (data) {
+          VK.api("users.get", {fields: "first_name, last_name, photo"}, function (data) {
 
             console.log('user PROFILE:')
             console.log(data);
