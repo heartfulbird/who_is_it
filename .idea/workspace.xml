@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72366523-0e57-41b5-ae3c-a2d843b6468c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rating/index.slim" afterPath="$PROJECT_DIR$/app/views/rating/index.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="template.iws" />
@@ -11,11 +12,11 @@
     <file path="/welcome_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396794988941" ignored="false" />
     <file path="/index.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387205698128" ignored="false" />
     <file path="/application_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396802416103" ignored="false" />
-    <file path="/index.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396805513961" ignored="false" />
+    <file path="/index.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396807261174" ignored="false" />
     <file path="/amelia.html.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1395654715194" ignored="false" />
     <file path="/application.html.erb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387023466264" ignored="false" />
     <file path="/app.css" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1387024403863" ignored="false" />
-    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396800071697" ignored="false" />
+    <file path="/app.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396807746454" ignored="false" />
     <file path="/development.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1388942000522" ignored="false" />
     <file path="/mycache_controller.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396802302933" ignored="false" />
     <file path="/routes.rb" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396800872791" ignored="false" />
@@ -45,7 +46,7 @@
     <file path="/_navbar.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389101357261" ignored="false" />
     <file path="/dev.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389190803366" ignored="false" />
     <file path="/vk_id.js" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396803125170" ignored="false" />
-    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396805973689" ignored="false" />
+    <file path="/Dummy.txt" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1396806639725" ignored="false" />
     <file path="/clear_users.slim" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389730873323" ignored="false" />
     <file path="/.gitignore" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1389733200203" ignored="false" />
     <file path="/mixins.sass" changelist="72366523-0e57-41b5-ae3c-a2d843b6468c" time="1390069907896" ignored="false" />
@@ -75,25 +76,25 @@
       <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rating/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="-8.75">
+            <state line="11" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vk_id.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="vk_id.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="68" selection-start="972" selection-end="972" vertical-scroll-proportion="0.48007968">
+            <state line="28" column="68" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.sass" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="535" column="16" selection-start="9593" selection-end="9593" vertical-scroll-proportion="0.0">
+            <state line="550" column="20" selection-start="10644" selection-end="10681" vertical-scroll-proportion="0.49353448">
               <folding />
             </state>
           </provider>
@@ -153,13 +154,13 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140406151653_index_users_on_count.rb" />
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/mycache_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/functions.js" />
-        <option value="$PROJECT_DIR$/app/views/rating/index.slim" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js" />
+        <option value="$PROJECT_DIR$/app/views/rating/index.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass" />
       </list>
     </option>
   </component>
@@ -921,7 +922,11 @@
       <created>1396805977892</created>
       <updated>1396805977892</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="photo">
+      <created>1396806644057</created>
+      <updated>1396806644057</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -990,7 +995,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile vk___ hstore need string query ('list') not :list" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1004,7 +1009,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="vk post" />
     <MESSAGE value="test vk post" />
     <MESSAGE value="test vk post_" />
     <MESSAGE value="test vk post__" />
@@ -1029,6 +1033,7 @@
     <MESSAGE value="User Profile vk__" />
     <MESSAGE value="User Profile vk___" />
     <MESSAGE value="User Profile vk___ hstore need string query ('list') not :list" />
+    <MESSAGE value="photo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,23 +1132,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="535" column="16" selection-start="9593" selection-end="9593" vertical-scroll-proportion="0.0">
+        <state line="28" column="68" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rating/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="-8.75">
+        <state line="11" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/vk_id.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages/app.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="68" selection-start="972" selection-end="972" vertical-scroll-proportion="0.48007968">
+        <state line="550" column="20" selection-start="10644" selection-end="10681" vertical-scroll-proportion="0.49353448">
           <folding />
         </state>
       </provider>

@@ -4,6 +4,16 @@
 
 $orange: #FFC612
 
+@mixin orange_grad
+  background: rgb(161, 219, 255)
+  background: -moz-linear-gradient(top, rgba(161, 219, 255, 1) 0%, rgba(255, 198, 17, 1) 0%, rgba(255, 212, 84, 1) 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(161, 219, 255, 1)), color-stop(0%, rgba(255, 198, 17, 1)), color-stop(100%, rgba(255, 212, 84, 1)))
+  background: -webkit-linear-gradient(top, rgba(161, 219, 255, 1) 0%, rgba(255, 198, 17, 1) 0%, rgba(255, 212, 84, 1) 100%)
+  background: -o-linear-gradient(top, rgba(161, 219, 255, 1) 0%, rgba(255, 198, 17, 1) 0%, rgba(255, 212, 84, 1) 100%)
+  background: -ms-linear-gradient(top, rgba(161, 219, 255, 1) 0%, rgba(255, 198, 17, 1) 0%, rgba(255, 212, 84, 1) 100%)
+  background: linear-gradient(to bottom, rgba(161, 219, 255, 1) 0%, rgba(255, 198, 17, 1) 0%, rgba(255, 212, 84, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1dbff', endColorstr='#ffd454', GradientType=0)
+
 .orange
   color: $orange
 
@@ -534,6 +544,19 @@ $t2: 0.5s
   margin: 20px 0px 50px 50px
   table
     width: 700px
+    tr:nth-child(odd)
+      background-color: rgba(204, 204, 204, 0.07)
+      //+orange_grad
+      //td span
+      //  color: white !important
+    td
+      vertical-align: middle
+      img
+        border-radius: 5px
   .user
     span
       margin-right: 20px
+
+.orange_grad
+  +orange_grad
+  color: white
