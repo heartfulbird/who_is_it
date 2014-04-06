@@ -36,7 +36,7 @@ class ApplicationController < ActionController::Base
   # При загрузке стр мы будем пробовать взять данные из кэша. иначе мы берем их из базы и сразу записываем в кэш
 
   # USER Cache
-  def user_cache(key)
+  def user_cache(key, fio, photo)
 
     #@data = Rails.cache.read(key)
     #
@@ -65,7 +65,9 @@ class ApplicationController < ActionController::Base
                                                         count_world: '0',
                                                         status_hot: '0',
                                                         status_dance: '0',
-                                                        status_world: '0'
+                                                        status_world: '0',
+                                                        fio: fio,
+                                                        photo: photo
         }
         @user.save
       else

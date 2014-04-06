@@ -58,7 +58,7 @@ Template::Application.routes.draw do
   resources :welcome, :rating
 
 
-  get 'get_data/:key' => 'mycache#get_data'
+  post 'get_data' => 'mycache#get_data'
   post 'write_data' => 'mycache#write_data',  method: :post
 
   get 'only_read/:key' => 'mycache#only_read'

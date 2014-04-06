@@ -7,10 +7,12 @@ class MycacheController < ApplicationController
   def get_data
 
      # берем данные из кэша
-    @data = user_cache(params[:key])
+    @data = user_cache(params[:vk_id], params[:fio], params[:photo])
 
      # Отдаем их
      render json: @data.to_json
+
+    #render json: params[:vk_id]
 
   end
 

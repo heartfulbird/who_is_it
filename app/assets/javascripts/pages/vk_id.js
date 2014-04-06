@@ -31,9 +31,15 @@ function getVkId () {   // когда загрузится вся страниц
             console.log('user PROFILE:')
             console.log(data);
 
+            var profile = data.response[0];
+            var fio = profile.first_name + ' ' + last_name;
+            var photo = profile.photo_medium;
+
+
+            getUser(vkID, fio, photo);
           });
 
-        getUser(vkID);
+
       }
 
 
