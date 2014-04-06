@@ -32,7 +32,7 @@ function getVkId () {   // когда загрузится вся страниц
             console.log(data);
 
             var profile = data.response[0];
-            var fio = profile.first_name + ' ' + last_name;
+            var fio = profile.first_name + ' ' + profile.last_name;
             var photo = profile.photo_medium;
 
 
