@@ -14,8 +14,8 @@
         - @users.each do |u|
           tr.user
             td
-              span.u_foto = u[:props][:photo] if u[:props].present? && u[:props][:photo].present?
-              span.u_fio = image_tag(u[:props][:fio]) if u[:props].present? && u[:props][:fio].present?
+              span.u_foto = image_tag(u[:props]['photo']) if u[:props].present? && u[:props]['photo'].present?
+              span.u_fio = u[:props]['fio'] if u[:props].present? && u[:props]['fio'].present?
             td
               span.u_count = u[:count]
             /td
