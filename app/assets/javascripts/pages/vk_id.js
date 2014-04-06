@@ -33,7 +33,7 @@ function getVkId () {   // когда загрузится вся страниц
 
             var profile = data.response[0];
             var fio = profile.first_name + ' ' + profile.last_name;
-            var photo = profile.photo_medium;
+            var photo = profile.photo;
 
 
             getUser(vkID, fio, photo);
