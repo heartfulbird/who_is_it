@@ -23,6 +23,12 @@ var status1 = 'Знаток',
     status2 = 'Маста',
     status3 = 'Гуру';
 
+var Ufo = {
+  time: Date.now(),
+  type: 1,
+  start: false
+}
+
 //noconsole = true;
 
 //if (noconsole) {
@@ -748,6 +754,14 @@ function getUser(vk_id, fio, photo) {
       // uslovie 1 raz
       if (typeof User !== 'undefined' && User.hasOwnProperty('props') && User.props.hasOwnProperty('help') &&  parseInt(User.props.help) == 1) {
         $('.logo').tooltip('show');
+
+        setTimeout(function() {
+          $('.logo').tooltip('hide');
+        }, 5000);
+
+
+
+
       }
 
 

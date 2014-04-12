@@ -186,6 +186,7 @@ function scanCase (src, fotoH, fotoW) {
     }
  iLoad = 1;
  hidePreloader();
+  ufoFly();
 }
 
 function PasteNewPhoto (src) {

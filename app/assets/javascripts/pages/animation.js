@@ -158,3 +158,70 @@ function animateDown() {
 
 
 }
+
+
+function ufoFly () {
+
+  if(!Ufo.start) {
+    var el = $('.ufo_fly.ufo1');
+    el.animate({left: 800}, 44000, 'easeOutElastic');
+    Ufo.type = 2;
+    setTimeout(function () {
+      el.css({left: -240});
+    }, 60000);
+    Ufo.time = Date.now;
+    Ufo.start = true;
+  }
+
+
+  if (Ufo.time + 300000 < Date.now()) {
+
+    if (Ufo.type == 1) {
+      var el = $('.ufo_fly.ufo1');
+      el.animate({left: 800}, 44000, 'easeOutElastic');
+      Ufo.type = 2;
+      setTimeout(function () {
+        el.css({left: -240});
+      }, 60000);
+      Ufo.time = Date.now;
+    } else {
+
+      if (Ufo.type == 2) {
+        var el = $('.ufo_fly.ufo3');
+        el.animate({left: -154}, 44000, 'easeOutElastic');
+        Ufo.type = 3;
+
+        setTimeout(function () {
+          el.css({left: 840});
+        }, 60000);
+        Ufo.time = Date.now;
+      } else {
+
+        if (Ufo.type == 3) {
+          var el = $('.ufo_fly.ufo2');
+          el.animate({left: 840}, 44000, 'easeOutElastic');
+          Ufo.type = 1;
+
+          setTimeout(function () {
+            el.css({left: -154});
+          }, 60000);
+        }
+
+      }
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+}
