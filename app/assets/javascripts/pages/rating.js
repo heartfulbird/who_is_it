@@ -9,7 +9,9 @@ $(function () {
     ind = iam.data('i');
     $('.position').text(ind);
   } else {
-    $('.rating_info .text').text('Вы пока не вошли в топ 100').nextAll().hide();
+    $('.rating_info .text').text('Вы пока не вошли в топ 100');
+    $('.post_rating').hide();
+    $('.point').first().hide();
   }
 
 

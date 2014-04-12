@@ -38,6 +38,8 @@ def toBase
 
             # пишем     попробовать просто User.update(user) [хотя по идее update(user[:id] - это говорит куда сохранять
             # или User.update(user[:id], count: user[:count], props: user[:props])
+            user[:props][:help] = 0
+
             if User.update(user[:id], count: user[:count], props: user[:props])
 
               # То что записалось удаляем из временного списка

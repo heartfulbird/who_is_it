@@ -744,6 +744,13 @@ function getUser(vk_id, fio, photo) {
 
       var r_link = $('#rating_link')
       r_link.attr('href', r_link.attr('href')+'?vk_id='+vk_id);
+
+      // uslovie 1 raz
+      if (typeof User !== 'undefined' && User.hasOwnProperty('props') && User.props.hasOwnProperty('help') &&  parseInt(User.props.help) == 1) {
+        $('.logo').tooltip('show');
+      }
+
+
     }
   });
 
@@ -877,8 +884,15 @@ function initEvents() {
     $('.boxes').show(1000);
   });
 
-  $('.tool_tip').tooltip({ placement: 'bottom' });
+//  $('.tool_tip').tooltip();
+  $('.logo').tooltip({ placement: 'bottom' });
+  $('#change_category').tooltip({ placement: 'bottom' });
+  $('#watch_unknown').tooltip({ placement: 'bottom' });
+  $('#to_rating').tooltip({ placement: 'bottom' });
 
+  $('.logo').on('click', function () {
+    $('#help').modal();
+  });
 
   $('.post').on('click', function() {
 

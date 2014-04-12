@@ -67,7 +67,8 @@ class ApplicationController < ActionController::Base
                                                         status_dance: '0',
                                                         status_world: '0',
                                                         fio: fio,
-                                                        photo: photo
+                                                        photo: photo,
+                                                        help: 1
         }
         @user.save
       else

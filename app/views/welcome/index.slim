@@ -6,10 +6,10 @@
   /
   /p = @data
 
-  h1.logo.lobster Top100
+  h1.logo.lobster data-original-title="Нажмите на логотип Top100 чтобы узнать как пользоваться приложением" Top100
 
   #category
-    .lobster Hottt
+    .lobster#change_category data-original-title="Сменить категорию" Hottt
     #watch_unknown.icon-eye-open.tool_tip data-original-title="Смотреть видео неугаданных групп"
 
 
@@ -73,7 +73,7 @@
 
   #counter
     /#watch_unknown.icon-eye-open.tool_tip data-original-title="Смотреть видео неугаданных групп"
-    p.text  = link_to 'Угадано:', rating_index_path, id: :rating_link
+    p.text.tool_tip#to_rating data-original-title="Посмотреть свой рейтинг"  = link_to 'Угадано:', rating_index_path, id: :rating_link
     p.digit
 
 
@@ -180,4 +180,55 @@
 
   /#watch_unknown Смотреть видео неугаданных групп
 
+
+  .modal.fade#help
+    div class="modal-dialog"
+      div class="modal-content"
+        div class="modal-header"
+          button type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;
+          h4 class="modal-title" Как пользоваться
+        div class="modal-body"
+
+          p Попробуйте угадать группу на фото. Выберите один из четырех вариантов.
+          p
+            | Вы можете играть в одной из 3 категорий:
+            span.lobster.orange &nbsp; Hottt,
+            span.lobster.orange &nbsp; Dance
+            | &nbsp; или
+            span.lobster.orange &nbsp; World.
+          p Для смены категории кликните на названии текущей категории.
+          p
+            | По умолчанию стоит категория
+            span.lobster.orange &nbsp; Hottt.
+          p
+            span.lobster.orange &nbsp; Hottt
+            | &nbsp; - самые актуальные группы на сегодняшний день во всем мире.
+          p
+            span.lobster.orange &nbsp; Dance
+            | &nbsp;  - лучшие 100 артистов в танцевальной музыке.
+          p
+            span.lobster.orange &nbsp; World
+            | &nbsp;  - 100 самых известных музыкантов за всю историю поп и рок музыки.
+          p Если вы не угадали какого-то артиста и вам интересно какую музыку он играет
+          p
+            | вы можете посмотреть
+            span.lobster.orange &nbsp; Видео
+            | &nbsp;  в разделе неугаданных групп.
+          p
+            | Для этого нажмите на иконку глаза
+            span class="icon-eye-open tool_tip" id="watch_unknown" style="margin-left: 10px; line-height: 13px"
+          p
+            | Вы можете посмотреть свой
+            span.lobster.orange &nbsp; Рейтинг
+            | &nbsp; угаданных групп во всех категориях.
+          p
+            | Для этого нажмите на слово
+            span.lobster.orange &nbsp;Угадано.
+          p В рейтинге выводятся первые 100 человек, угадавшие больше всего групп.
+
+        div class="modal-footer"
+          button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+
+
+  /.help.ufo1.tool_tip data-original-title="Нажмите на логотип Top100 чтобы узнать как пользоваться приложением"
 

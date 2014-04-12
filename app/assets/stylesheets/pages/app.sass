@@ -268,10 +268,10 @@ $orange: #FFC612
     &:hover
       color: #FFC612
   // 2
-  .icon-eye-open
-    font-size: 24px
-    cursor: pointer
-    margin-left: 58px
+.icon-eye-open
+  font-size: 24px
+  cursor: pointer
+  margin-left: 58px
     //display: none
 #change_category
   .modal-body
@@ -518,6 +518,13 @@ $tooltip-color: black !important
 .tooltip-arrow
   border-bottom-color: $tooltip-color
 
+.tooltip.right
+  .tooltip-arrow
+    //border-width: 5px 5px 5px 0px !important
+    border-top: 5px solid transparent !important
+    border-bottom: 5px solid transparent !important
+    border-right: 5px solid $tooltip-color !important
+
 //$t: 0.3s
 //$t2: 0.1s
 @mixin transition($str)
@@ -613,4 +620,27 @@ $t2: 0.5s
 .position
   margin-right: 0px !important
   font-size: 16px
+#help
+  .lobster
+    font-size: 16px
+.help
+  position: absolute
+  top: 42px
+  width: 175px
+  height: 228px
+  background-size: 176px
+  z-index: 10
+  // norm
+  //right: 639px
+  //right: -250px
+  left: 125px
+  &.ufo1
+    background: image-url('funny/ufo_1.png') no-repeat
+    background-size: 123px
+    background-position: 44px 0px
 
+tr.orange_grad th
+  border: none
+
+[data-i="1"] td
+  border: none !important
