@@ -164,11 +164,11 @@ function ufoFly () {
 
   if(!Ufo.start) {
     var el = $('.ufo_fly.ufo1');
-    el.animate({left: 800}, 44000, 'easeOutElastic');
+    el.animate({left: 800}, 44000, 'easeOutElastic').addClass('flying');
     Ufo.type = 2;
     setTimeout(function () {
-      el.css({left: -240});
-    }, 60000);
+      el.css({left: -240}).removeClass('flying');
+    }, 61000);
 
     Ufo.start = true;
   }
@@ -176,38 +176,40 @@ function ufoFly () {
 
   if ((Date.now().getMinutes()/5).toString().indexOf('.') == -1) {
 
-    if (Ufo.type == 1) {
-      var el = $('.ufo_fly.ufo1');
-      el.animate({left: 800}, 44000, 'easeOutElastic');
-      Ufo.type = 2;
-      setTimeout(function () {
-        el.css({left: -240});
-      }, 60000);
-
-    } else {
-
-      if (Ufo.type == 2) {
-        var el = $('.ufo_fly.ufo3');
-        el.animate({left: -154}, 44000, 'easeOutElastic');
-        Ufo.type = 3;
-
+    if ($('.flying').length == 0) {
+      if (Ufo.type == 1) {
+        var el = $('.ufo_fly.ufo1');
+        el.addClass('flying').animate({left: 800}, 44000, 'easeOutElastic');
+        Ufo.type = 2;
         setTimeout(function () {
-          el.css({left: 840});
-        }, 60000);
+          el.css({left: -240}).removeClass('flying');
+        }, 61000);
 
       } else {
 
-        if (Ufo.type == 3) {
-          var el = $('.ufo_fly.ufo2');
-          el.animate({left: 840}, 44000, 'easeOutElastic');
-          Ufo.type = 1;
+        if (Ufo.type == 2) {
+          var el = $('.ufo_fly.ufo3');
+          el.addClass('flying').animate({left: -154}, 44000, 'easeOutElastic');
+          Ufo.type = 3;
 
           setTimeout(function () {
-            el.css({left: -154});
-          }, 60000);
-        }
+            el.css({left: 840}).removeClass('flying');
+          }, 61000);
 
+        } else {
+
+          if (Ufo.type == 3) {
+            var el = $('.ufo_fly.ufo2');
+            el.addClass('flying').animate({left: 840}, 44000, 'easeOutElastic');
+            Ufo.type = 1;
+
+            setTimeout(function () {
+              el.css({left: -154}).removeClass('flying');
+            }, 60000);
+          }
+        }
       }
+
 
 
     }
