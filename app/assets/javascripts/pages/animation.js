@@ -169,12 +169,12 @@ function ufoFly () {
     setTimeout(function () {
       el.css({left: -240});
     }, 60000);
-    Ufo.time = Date.now;
+
     Ufo.start = true;
   }
 
 
-  if (Ufo.time + 300000 < Date.now()) {
+  if ((Date.now().getMinutes()/5).toString().indexOf('.') == -1) {
 
     if (Ufo.type == 1) {
       var el = $('.ufo_fly.ufo1');
@@ -183,7 +183,7 @@ function ufoFly () {
       setTimeout(function () {
         el.css({left: -240});
       }, 60000);
-      Ufo.time = Date.now;
+
     } else {
 
       if (Ufo.type == 2) {
@@ -194,7 +194,7 @@ function ufoFly () {
         setTimeout(function () {
           el.css({left: 840});
         }, 60000);
-        Ufo.time = Date.now;
+
       } else {
 
         if (Ufo.type == 3) {

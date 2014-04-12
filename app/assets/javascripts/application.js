@@ -16,6 +16,7 @@
 
 //= require libs/jQueryRotateCompressed.2.2
 //= require libs/jquery.easing.1.3
+//= require libs/date
 
 //= require pages/vk_id
 //= require pages/cache

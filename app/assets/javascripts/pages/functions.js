@@ -24,7 +24,6 @@ var status1 = 'Знаток',
     status3 = 'Гуру';
 
 var Ufo = {
-  time: Date.now(),
   type: 1,
   start: false
 }
@@ -900,7 +899,7 @@ function initEvents() {
 
 //  $('.tool_tip').tooltip();
   $('.logo').tooltip({ placement: 'bottom' });
-  $('#change_category').tooltip({ placement: 'bottom' });
+  $('#category .lobster').tooltip({ placement: 'bottom' });
   $('#watch_unknown').tooltip({ placement: 'bottom' });
   $('#to_rating').tooltip({ placement: 'bottom' });
 

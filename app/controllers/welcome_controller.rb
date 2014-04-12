@@ -17,6 +17,8 @@ class WelcomeController < ApplicationController
     gon.dance = @dance
     gon.world = @world
 
+    gon.page = 'main'
+
     if Rails.env == 'production'
       gon.env = 'production'
     else
