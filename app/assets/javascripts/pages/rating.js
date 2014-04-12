@@ -14,7 +14,7 @@ $(function () {
 
 
 
-  $('.post').on('click', function() {
+  $('.post_rating').on('click', function() {
 
     var APP_ID = '4072724';
 
