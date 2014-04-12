@@ -1,7 +1,27 @@
 = content_for :main_page do
-  #rating_page
-    h3.lobster.orange Рейтинг
 
+  #rating_page
+    .span4
+      h3.lobster.orange Рейтинг
+    .span8
+      /.pull-right.place.lobster У вас .. место в общем рейтинге
+      /.pull-right.place.lobster Рейтинг обновляется каждые 15 мин.
+
+    .clearfix
+
+    br
+
+    .rating_info
+      span.act.text
+        | У вас&nbsp;&nbsp;
+        span.position.lobster
+        | &nbsp;&nbsp;место в общем рейтинге
+      span.point
+      span.post.act Опубликовать рейтинг
+      span.point
+      a#invite.act onclick='VK.callMethod("showInviteBox");' Пригласить друга
+    br
+    br
 
     .users_desc
       table.table
@@ -12,8 +32,8 @@
             // У вас .. место в общем рейтинге
             // Опубликовать свой результат
 
-        - @users.each do |u|
-          tr.user
+        - @users.each_with_index do |u, i|
+          tr.user id='#{u.id_vk}' data-i='#{i+1}'
             td
               span.u_foto = image_tag(u[:props]['photo']) if u[:props].present? && u[:props]['photo'].present?
               span.u_fio = u[:props]['fio'] if u[:props].present? && u[:props]['fio'].present?
@@ -21,6 +41,4 @@
               span.u_count = u[:count]
             /td
             /  span.u_status медальки
-
-
 

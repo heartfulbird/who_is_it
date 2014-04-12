@@ -740,6 +740,10 @@ function getUser(vk_id, fio, photo) {
       enterUsers(vk_id);
 
       groupsInfo('hot');
+
+
+      var r_link = $('#rating_link')
+      r_link.attr('href', r_link.attr('href')+'?vk_id='+vk_id);
     }
   });
 
@@ -960,16 +964,36 @@ function initEvents() {
 
 
   // TEST, dev
-  if (typeof(gon) !== 'undefined') {
-    if (gon.env !== 'production') {
-      vkID = '111';
-      getUser(vkID);
-    }
-  } else {
+  if (typeof(gon) == 'undefined') {
+
     console.log('gon не определен на этой странице');
+
+  } else {
+
+    if (gon.env == 'production') {
+
+
+    } else {
+      // test
+
+      if (gon.hasOwnProperty('page') && gon.page == 'rating') {
+//         console.log('мы в рейтингах');
+      } else {
+        vkID = '111';
+        getUser(vkID);
+      }
+
+
+
+    }
+
+
   }
 
 
+//  if (gon.hasOwnProperty('page') && gon.page == 'rating') {
+//    console.log('мы в рейтингах');
+//  }
 }
 
 
