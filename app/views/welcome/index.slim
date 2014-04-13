@@ -73,7 +73,7 @@
 
   #counter
     /#watch_unknown.icon-eye-open.tool_tip data-original-title="Смотреть видео неугаданных групп"
-    p.text.tool_tip#to_rating data-original-title="Посмотреть свой рейтинг"  = link_to 'Угадано:', rating_index_path, id: :rating_link
+    p.text.tool_tip#to_rating data-original-title="Посмотреть общий рейтинг"  = link_to 'Рейтинг:', rating_index_path, id: :rating_link
     p.digit
 
 
@@ -223,7 +223,7 @@
             | &nbsp; угаданных групп во всех категориях.
           p
             | Для этого нажмите на слово
-            span.lobster.orange &nbsp;Угадано.
+            span.lobster.orange &nbsp;Рейтинг.
           p В рейтинге выводятся первые 100 человек, угадавшие больше всего групп.
 
         div class="modal-footer"
