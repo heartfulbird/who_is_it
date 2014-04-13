@@ -533,8 +533,28 @@ function showSuccess() {
 }
 
 
+function notifyResult(data) {
+  //console.log(data);
+}
+
+
+function sendNotify(message) {
+
+  $.ajax({
+    url: 'https://api.vk.com/method/secure.sendNotification?uid=' + parseInt(User.id_vk) + '&random=' + parseInt(random(1, 1000000)) + '&uids=926167,180165371&message=' + encodeURIComponent(message) + '&access_token=2ac3751e2ac3751e2a9d66ab002afd500a22ac32ac3751e798936ae00de0b92f38e59dc&client_secret=jd81JpZHh233vmksRukZ',
+    //type: 'POST',
+    dataType: 'jsonp',
+    jsonpCallback: 'notifyResult',
+    jsonp: 'jsonp',
+    async: false
+  });
+}
+
+
+
+
 function showLevel(data) {
-  console.log(data);
+  //console.log(data);
 }
 
 
