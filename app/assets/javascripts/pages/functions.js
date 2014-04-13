@@ -533,6 +533,23 @@ function showSuccess() {
 }
 
 
+function showLevel(data) {
+  console.log(data);
+}
+
+
+function upLevel() {
+
+  $.ajax({
+    url: 'https://api.vk.com/method/secure.setUserLevel?uid=' + vkID + '&level=' + User.count + '&access_token=2ac3751e2ac3751e2a9d66ab002afd500a22ac32ac3751e798936ae00de0b92f38e59dc&client_secret=jd81JpZHh233vmksRukZ',
+    //type: 'POST',
+    dataType: 'jsonp',
+    jsonpCallback: 'showLevel',
+    jsonp: 'jsonp',
+    async: false
+  });
+}
+
 
 function updatePageCounter(counter) {
 
@@ -546,7 +563,8 @@ function updatePageCounter(counter) {
   setTimeout(function () {
     dig.removeClass('big');
 
-  } ,1000)
+  } ,1000);
+
 
 //  if (parseInt(counter)  > 0) {
 //    $('.icon-eye-open').show();
@@ -610,6 +628,9 @@ function success () {
 //    }, 1000);
 
   }
+
+
+  upLevel();
 
 }
 
@@ -952,6 +973,13 @@ function initEvents() {
 
     //ufoShow test
     // ufoShow();
+
+
+
+    //https://api.vk.com/method/'''METHOD_NAME'''?'''PARAMETERS'''&access_token='''ACCESS_TOKEN'''
+
+
+
 
   });
   // end
