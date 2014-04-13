@@ -541,7 +541,7 @@ function showLevel(data) {
 function upLevel() {
 
   $.ajax({
-    url: 'https://api.vk.com/method/secure.setUserLevel?uid=' + vkID + '&level=' + User.count + '&access_token=2ac3751e2ac3751e2a9d66ab002afd500a22ac32ac3751e798936ae00de0b92f38e59dc&client_secret=jd81JpZHh233vmksRukZ',
+    url: 'https://api.vk.com/method/secure.setUserLevel?uid=' + parseInt(vkID) + '&level=' + parseInt(User.count) + '&access_token=2ac3751e2ac3751e2a9d66ab002afd500a22ac32ac3751e798936ae00de0b92f38e59dc&client_secret=jd81JpZHh233vmksRukZ',
     //type: 'POST',
     dataType: 'jsonp',
     jsonpCallback: 'showLevel',
