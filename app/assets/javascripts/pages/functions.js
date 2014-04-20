@@ -879,9 +879,6 @@ function windowModify () {
         $('.fix_iframe_container').height(h + 100);
         VK.callMethod("resizeWindow", 800, h + 100);
   }, 1200);
-  //  setTimeout(function () {
-//    $('.fix_iframe_container').css('overflow-y', 'auto');
-//  },
 
 }
 
@@ -897,7 +894,14 @@ function windowDefault() {
 //  $('.fix_iframe_container').css('overflow-y', 'hidden');
 }
 
+function windowSizeOnEl(el) {
+  setTimeout(function () {
+    var h = el.height();
+    $('.fix_iframe_container').height(h + 100);
+    VK.callMethod("resizeWindow", 800, h + 100);
+  }, 1200);
 
+}
 
 
 function initEvents() {

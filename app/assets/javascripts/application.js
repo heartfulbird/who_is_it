@@ -23,5 +23,6 @@
 //= require pages/animation
 //= require pages/functions
 //= require pages/main
+//= require pages/rating
 
 //= require_tree .

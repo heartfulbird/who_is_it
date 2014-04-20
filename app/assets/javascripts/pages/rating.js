@@ -52,6 +52,10 @@ $(function () {
 
     });
 
+
+    windowSizeOnEl($('#main_page'));
+
+
   }
 
 });
