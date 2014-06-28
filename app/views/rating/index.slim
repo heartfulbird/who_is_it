@@ -28,6 +28,7 @@
         tr.orange_grad
           th Участник
           th Всего угадано
+          th Место
           /th Статусы
             // У вас .. место в общем рейтинге
             // Опубликовать свой результат
@@ -39,6 +40,8 @@
               span.u_fio = u[:props]['fio'] if u[:props].present? && u[:props]['fio'].present?
             td
               span.u_count = u[:count]
+            td = i + 1
+
             /td
             /  span.u_status медальки
 

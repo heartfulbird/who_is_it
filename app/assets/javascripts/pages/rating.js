@@ -55,6 +55,17 @@ $(function () {
 
     windowSizeOnEl($('#main_page'));
 
+    setTimeout(function () {
+      windowSizeOnEl($('#main_page'));
+    }, 1000)
+
+    setTimeout(function () {
+      windowSizeOnEl($('#main_page'));
+    }, 2000)
+
+    setTimeout(function () {
+      windowSizeOnEl($('#main_page'));
+    }, 4000)
 
   }
 
