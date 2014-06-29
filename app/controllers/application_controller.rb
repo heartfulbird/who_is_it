@@ -54,25 +54,35 @@ class ApplicationController < ActionController::Base
 
       # Берем юзера по его id
       # Если его еще нет то записываем с дефолтными значениями
-      # и отдаем
+      # и отдаем111
+      # Companies [target_enter_11]
       @user = User.where(id_vk: key)
 
       if @user.empty?
-        @user = User.new id_vk: key, count: 0, props: {
-                                                        list: '',
-                                                        count_hot: '0',
-                                                        count_dance: '0',
-                                                        count_world: '0',
-                                                        status_hot: '0',
-                                                        status_dance: '0',
-                                                        status_world: '0',
-                                                        fio: fio,
-                                                        photo: photo,
-                                                        help: 1
+        @user = User.new id_vk: key, count: 0, pr_company: 'target_enter_11', visits: 1, props: {
+                                                                                          list: '',
+                                                                                          count_hot: '0',
+                                                                                          count_dance: '0',
+                                                                                          count_world: '0',
+                                                                                          status_hot: '0',
+                                                                                          status_dance: '0',
+                                                                                          status_world: '0',
+                                                                                          fio: fio,
+                                                                                          photo: photo,
+                                                                                          help: 1
         }
         @user.save
+
+      #  ВЫборка по дате с определенного момента
+      #  User.where('created_at >= :some_point', some_point: Time.now - 10.hour)
+
       else
+
         @user = @user.first
+
+        @user[:visits]= @user[:visits].to_i + 1
+
+        @user.save
       end
 
       @user
