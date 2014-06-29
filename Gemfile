@@ -41,6 +41,11 @@ gem 'dalli'
 gem 'whenever', :require => false
 gem 'font-awesome-sass'
 
+
+# ANALITICS
+
+gem 'newrelic_rpm'
+
 group :development, :test do
   gem 'pg'
 end
