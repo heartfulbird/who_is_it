@@ -45,6 +45,7 @@ gem 'font-awesome-sass'
 # ANALITICS
 
 gem 'newrelic_rpm'
+gem "bugsnag"
 
 group :development, :test do
   gem 'pg'
