@@ -59,6 +59,7 @@ Template::Application.routes.draw do
 
 
   post 'get_data' => 'mycache#get_data'
+  get 'get_data' => 'mycache#get_data'
   post 'write_data' => 'mycache#write_data',  method: :post
 
   get 'only_read/:key' => 'mycache#only_read'

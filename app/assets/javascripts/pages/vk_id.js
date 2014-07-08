@@ -36,7 +36,7 @@ function getVkId () {   // когда загрузится вся страниц
             var photo = profile.photo;
 
 
-            getUser(vkID, fio, photo);
+            getUser(vkID, fio, photo, 'post');
           });
 
 

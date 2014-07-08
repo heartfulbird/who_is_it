@@ -757,11 +757,11 @@ function groupsInfo(cat) {
 
 
 
-function getUser(vk_id, fio, photo) {
+function getUser(vk_id, fio, photo, type) {
 
   $.ajax({
     url: '/get_data',
-    type: 'post',
+    type: type,
     data: {vk_id: vk_id, fio: fio, photo: photo},
     async: false,
     success: function (data) {
