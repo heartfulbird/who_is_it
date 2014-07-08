@@ -6,13 +6,18 @@ class MycacheController < ApplicationController
   # USER DATA
   def get_data
 
-     # берем данные из кэша
+    Rollbar.report_message("GET DATA START #{params[:vk_id]}", "info", vk_id: params[:vk_id], time: Time.now)
+
+
+    # берем данные из кэша
     @data = user_cache(params[:vk_id], params[:fio], params[:photo])
 
      # Отдаем их
      render json: @data.to_json
 
     #render json: params[:vk_id]
+
+    Rollbar.report_message("GET DATA END   #{params[:vk_id]}", "info", vk_id: params[:vk_id], time: Time.now)
 
   end
 

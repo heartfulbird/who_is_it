@@ -42,10 +42,10 @@ gem 'whenever', :require => false
 gem 'font-awesome-sass'
 
 
-# ANALITICS
-
+# ANALITYCS
 gem 'newrelic_rpm'
-gem "bugsnag"
+gem 'bugsnag'
+gem 'rollbar'
 
 group :development, :test do
   gem 'pg'
